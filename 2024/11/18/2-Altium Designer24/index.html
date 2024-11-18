@@ -1,0 +1,610 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>2-Altium Designer24 | badboy</title><meta name="author" content="joy"><meta name="copyright" content="joy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Altium Designer24第一讲 学习方法及注意事项【快捷键Ctrl+S】是保存，养成经常保存的习惯。该笔记入门都不是，更多的还是得自学 快捷键不区分大小写，有些只是为了好区分L和i两个字母。 学习基础不要记笔记，很浪费时间，费力不讨好。而且网上都搜得到的感觉记笔记是浪费时间。但要有记笔记的意识，或者养成记笔记的习惯。指不定这些笔记在未来会是宝贵的财富。（本笔记可能只有自己看得懂） 一定要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2-Altium Designer24">
+<meta property="og:url" content="http://example.com/2024/11/18/2-Altium%20Designer24/index.html">
+<meta property="og:site_name" content="badboy">
+<meta property="og:description" content="Altium Designer24第一讲 学习方法及注意事项【快捷键Ctrl+S】是保存，养成经常保存的习惯。该笔记入门都不是，更多的还是得自学 快捷键不区分大小写，有些只是为了好区分L和i两个字母。 学习基础不要记笔记，很浪费时间，费力不讨好。而且网上都搜得到的感觉记笔记是浪费时间。但要有记笔记的意识，或者养成记笔记的习惯。指不定这些笔记在未来会是宝贵的财富。（本笔记可能只有自己看得懂） 一定要">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-11-18T08:36:36.333Z">
+<meta property="article:modified_time" content="2024-11-18T08:53:12.773Z">
+<meta property="article:author" content="joy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/11/18/2-Altium%20Designer24/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2-Altium Designer24',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-18 16:53:12'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="badboy"><span class="site-name">badboy</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">2-Altium Designer24</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-18T08:36:36.333Z" title="Created 2024-11-18 16:36:36">2024-11-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-18T08:53:12.773Z" title="Updated 2024-11-18 16:53:12">2024-11-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2-Altium Designer24"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Altium-Designer24"><a href="#Altium-Designer24" class="headerlink" title="Altium Designer24"></a>Altium Designer24</h1><h2 id="第一讲-学习方法及注意事项"><a href="#第一讲-学习方法及注意事项" class="headerlink" title="第一讲 学习方法及注意事项"></a>第一讲 学习方法及注意事项</h2><p>【快捷键Ctrl+S】是保存，养成经常保存的习惯。该笔记入门都不是，更多的还是得自学</p>
+<p>快捷键不区分大小写，有些只是为了好区分L和i两个字母。</p>
+<p>学习基础不要记笔记，很浪费时间，费力不讨好。而且网上都搜得到的感觉记笔记是浪费时间。但要有记笔记的意识，或者养成记笔记的习惯。指不定这些笔记在未来会是宝贵的财富。（本笔记可能只有自己看得懂）</p>
+<p><strong>一定要带着目的去学习，不然越学越迷茫。</strong></p>
+<p><strong>吾亦无他，唯手熟尔。</strong></p>
+<p>一定要多动手练习，看一个练习一个。练习推荐练习个20-50遍。练快捷键，快准狠。看起来专业。</p>
+<h2 id="第二讲-AD24的安装与激活"><a href="#第二讲-AD24的安装与激活" class="headerlink" title="第二讲 AD24的安装与激活"></a>第二讲 AD24的安装与激活</h2><h3 id="1-获取资源"><a href="#1-获取资源" class="headerlink" title="1 获取资源"></a>1 获取资源</h3><p>1.微信搜索<strong>凡亿PCB</strong>，关注公众号，然后输入<strong>B站素材</strong>，就可以得到百度网盘的下载链接。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104151130959.png" alt="image-20241104151130959"></p>
+<p>2.下载这三个文件，在AD24最新 那个文件夹下面</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104151442887.png" alt="image-20241104151442887"></p>
+<h3 id="2-安装软件"><a href="#2-安装软件" class="headerlink" title="2 安装软件"></a>2 安装软件</h3><p>1.解压Altium_Designer_Public_24_6_1.zip，进入目录，双击Installer.Exe文件，即可弹出安装向导对话框，点击NEXT。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104152507297.png" alt="image-20241104152507297"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104152600250.png" alt="image-20241104152600250"></p>
+<p>2.选择中文安装语言，并观看协议，选择接受协议内容。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104152714411.png" alt="image-20241104152714411"></p>
+<p>3.继续单击向导欢迎窗口的“Next”按钮，显示如图所示安装功能选择对话框，选择需要安装的组件功能。一般选择安装图示箭头指示的”PCB Design”、Importers\Exporters两项即可。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104152836719.png" alt="image-20241104152836719"></p>
+<p>4.继续单击向导欢迎窗口的“Next”按钮，显示如图所示选择安装路径对话框，选择安装路径和共享文件路径，推荐不要使用默认设置的路径（<strong>不要放在系统盘</strong>）（最好放在空间比较大的盘）。</p>
+<p><strong>注意：</strong>一定要记住Program Files：路径，后面破解的时候需要用上。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153048428.png" alt="image-20241104153048428"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153625852.png" alt="image-20241104153625852"></p>
+<p>5.确认安装信息无误后，继续单击对话框的”Next”按钮，安装开始，等待5~10分钟，安装即可完成，有些用户电脑应配置要求，会自动安装”Microsoft NET4.6.1”插件，安装之后重启电脑或者会出现如图所示安装完成界面，表示安装成功。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153704472.png" alt="image-20241104153704472"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153210086.png" alt="image-20241104153210086"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153234852.png" alt="image-20241104153234852"></p>
+<h3 id="3-软件破解"><a href="#3-软件破解" class="headerlink" title="3 软件破解"></a>3 软件破解</h3><p>1.解压AD24授权文件.zip文件，进入文件夹，可以看见如下两个文件</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104153947734.png" alt="image-20241104153947734"></p>
+<p>2.把shfolder.dll和另外一个文件复制并粘贴到安装目录中下，一般默认路径的话是以下路径：</p>
+<p><strong>C:\Program Files\Altium\AD24</strong></p>
+<p>然后点击两次X2.EXE文件，打开Altium 24软件</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104154613515.png" alt="image-20241104154613515"></p>
+<p>3.右上角点击头像图标，然后选择命令“License Management..”,出现如图所示账户窗口界面。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104155128851.png" alt="image-20241104155128851"></p>
+<p>4.找到Add standalone license file,弹出加载license文件对话框，加载我们提供的和谐Licenses文件（后缀.alf)</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104155244762.png" alt="image-20241104155244762"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104155450879.png" alt="image-20241104155450879"></p>
+<p>5.OK,我们软件和皆就到此为止了，如果你能新建PCB或者原理图了就标示破解成功了。效果如图：</p>
+<p>我们安装的版本是[24.6.1]</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104155608191.png" alt="image-20241104155608191"></p>
+<h3 id="4-软件汉化"><a href="#4-软件汉化" class="headerlink" title="4 软件汉化"></a>4 软件汉化</h3><p>1.打开软件，右上角执行图标命令””，点击勾选“UseLocalized resources”，这个时候会提示一个让您重启软件的提示，您吧软件关掉重新打开就可以是汉化版本了，如果您想再次切换到英文版，可以按照相同的操作再处理一遍。<br><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104155838577.png" alt="image-20241104155838577"></p>
+<p>2.至此软件的安装、破解与汉化结束了，可以开始后面的学习了。</p>
+<h2 id="第三讲-创建一个空白完整的电子设计工程"><a href="#第三讲-创建一个空白完整的电子设计工程" class="headerlink" title="第三讲 创建一个空白完整的电子设计工程"></a>第三讲 创建一个空白完整的电子设计工程</h2><p>1.一个完整工程应该包含元件库文件、原理图文件、PCB库文件、网络表文件、PCB文件、生产文件，应保证工程里面文件的唯一性，只一份PCB，一份原理图、一份封装等，一些不相关的文件应当及时删除掉。</p>
+<p>1）新建项目，英文输入下，点击键盘<strong>fnj</strong>，然后如下操作，我的项目名称为Demo</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104165400378.png" alt="image-20241104165400378"></p>
+<p>2）新建原理图，英文输入下，点击键盘<strong>fns</strong>即可。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104170016211.png" alt="image-20241104170016211"></p>
+<p>3）新建原理图库，英文输入下，点击键盘<strong>FNL</strong>，然后如下操作。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104170134390.png" alt="image-20241104170134390"></p>
+<p>4）新建PCB，英文输入下，点击键盘<strong>fnp</strong>即可</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104170345401.png" alt="image-20241104170345401"></p>
+<p>5）新建PCB库，英文输入下，点击键盘<strong>FNL</strong>，然后如下操作。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104170449739.png" alt="image-20241104170449739"></p>
+<p>2.新建好的空白工程如下图所示。我都报存为Demo为文件名的前缀了。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104170911639.png" alt="image-20241104170911639"></p>
+<p>3.游离于工程之外的文件称为“Free Documents”,所有针对它的设置及操作和工程无关，设计当中应当尽量避免出现。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104171019540.png" alt="image-20241104171019540"></p>
+<h2 id="第四讲-元件符号介绍及简单电阻容原理图库创建"><a href="#第四讲-元件符号介绍及简单电阻容原理图库创建" class="headerlink" title="第四讲 元件符号介绍及简单电阻容原理图库创建"></a>第四讲 元件符号介绍及简单电阻容原理图库创建</h2><p>1.原理图符号是元件在原理图上的表现形式，主要由元件边框、管脚（包括管脚序号和管脚名称）、元件名称及元件说明组成，通过放置的管脚来建立电气连接关系。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104171425238.png" alt="image-20241104171425238"></p>
+<p>2.元件符号中的管脚序号是和电子元件实物的管脚一一对应的。在创建元件的时候，图形不一定和实物完全一样，但是对于管脚序号和名称，一定要严格按照元件规格书中的说明一一对应好。</p>
+<h2 id="第五讲-复杂原理图库的创建（二极管、运放等）"><a href="#第五讲-复杂原理图库的创建（二极管、运放等）" class="headerlink" title="第五讲 复杂原理图库的创建（二极管、运放等）"></a>第五讲 复杂原理图库的创建（二极管、运放等）</h2><p>1.点击PCB库，然后点击右下角<img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104172255593.png" alt="image-20241104172255593">，勾选SCH Library。然后就可以开始画pcb库了。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104171954647.png" alt="image-20241104171954647"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106104020572.png" alt="image-20241106104020572"></p>
+<p>2.点击空白处，英文输入下，输入<strong>vgs</strong>，设置格点。放置引脚的时候100mil，画图形的时候10mil。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104171603535.png" alt="image-20241104171603535"></p>
+<p>3.工具如图所示<img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106104151107.png" alt="image-20241106104151107">鼠标放在上面就可以查看功能。其中<img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106104340314.png" alt="image-20241106104340314">是放置引脚【快捷键是pp】，<img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106104412092.png" alt="image-20241106104412092">是放置走线（右击可以切换方式，在走线的时候可以按<strong>Tab</strong>来中途切换线宽等参数)【快捷键是pL】。如下图所示画的电容放引脚的时候，需要把格点设置为100mil，走线的时候，需要把格点设置为10mil。双击引脚可以设置引脚号，引脚名称以及引脚长度。双击走线可以设置线宽以及颜色。<strong>空格</strong>可以旋转引脚。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104173436162.png" alt="image-20241104173436162"></p>
+<p>4.画好之后，可以双击右边的选项框，设置名称，检索，值以，备注以及封装。需要其他的PCB封装库可以点击添加，然后命名。再按照画电容的操作画其他的就行了。跟深层次的可以自行使用搜索引擎搜索。（画多端器件，例如LMV358IDGKR，需要点击空白，然后在英文输入下，点击按键<strong>TW</strong>）</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241104172727226.png" alt="image-20241104172727226"></p>
+<p>创建心得：<br>1)设置格点100mil，放置管脚，设置格点10mil，绘制元件元素；<br>2)元件模型的元素，菜单命令下面的“圆弧”、“椭圆”、“线条”、“多边形等元素进行组合成：<br>3)创建的元件进行器件属性的设置，完成该元件的模型创建。<br>原理图库只是一个实物器件在我们图纸上的一个表示，无需对实物尺寸负责，但还需要对其规范绘制，利于原理图可读性</p>
+<h2 id="第六讲-如何调用他人的原理图库"><a href="#第六讲-如何调用他人的原理图库" class="headerlink" title="第六讲 如何调用他人的原理图库"></a>第六讲 如何调用他人的原理图库</h2><p>1.虽然我们有时候需要根据自己需求创建原理图库，但是毕竟这要花费大量的时间和精力<br>元件库的来源：</p>
+<p>1）复制现有库；</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106105310097.png" alt="image-20241106105310097"></p>
+<p>2）已有原理图进行生成；【快捷键dm】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106105642641.png" alt="image-20241106105642641"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106105708065.png" alt="image-20241106105708065"></p>
+<p>3）Ic封装网(<a target="_blank" rel="noopener" href="http://www.iclib.com/">www.iclib.com</a>)</p>
+<h2 id="第七讲-检测原理图库的正确性并生成报告"><a href="#第七讲-检测原理图库的正确性并生成报告" class="headerlink" title="第七讲 检测原理图库的正确性并生成报告"></a>第七讲 检测原理图库的正确性并生成报告</h2><p>1.通过对上述元件符号的组成了解，并通过几个实战案例知晓原理图库创建的过程之后，我们需要知晓我们创建完成的原理图库是否满足规范要求，这个时候我们可以通过软件的检查与报告这个功能来实现。可以不用全选。【快捷键rr】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106110809060.png" alt="image-20241106110809060"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106110743576.png" alt="image-20241106110743576"></p>
+<p>①Duplicate-Component Names:重复的元件名称。<br>②Duplicate-Pins:重复的管脚。<br>③Missing-Description:元件描述未填写。<br>④Missing-Pin Name:管脚名称未填写。<br>⑤Missing-Footprint:元件封装未填写。<br>⑥Missing–Pin Number:元件管脚号未填写。<br>⑦Missing-Default Designator:元件位号未填写。<br>⑧Missing-Missing Pins in Sequence:在一个序列的管脚号中缺少某个号码。</p>
+<p>有些东西需要查看官方的手册，自行搜索（你是大学生了，不是小学生）。</p>
+<h2 id="第八讲-原理图页的大小设置及注意事项"><a href="#第八讲-原理图页的大小设置及注意事项" class="headerlink" title="第八讲 原理图页的大小设置及注意事项"></a>第八讲 原理图页的大小设置及注意事项</h2><p>1.在设计原理图之前我们一般需要对原理图页进行一定的设置，可以提高设计原理图的效率。虽然在实际的应用中，有时候不进行准备设置也没有很大关系，但是基于设计效率的提高，推荐读者进行设置。可以用用户自定义【Custom】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106114724466.png" alt="image-20241106114724466"></p>
+<p>2.网格的设置有利于放置元件及绘制导线的对齐，以达到规范和美化设计的目的推荐</p>
+<p>设置格点为：100mil【快捷键是vgs】</p>
+<h2 id="第九讲-原理图库调用与器件的摆放"><a href="#第九讲-原理图库调用与器件的摆放" class="headerlink" title="第九讲 原理图库调用与器件的摆放"></a>第九讲 原理图库调用与器件的摆放</h2><p>1.放置元件，需要先装载或者打开创建的元件库，可以通过执行右下角命令“Panels-Components”,调出原理图库”Libraries”进行装载。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106133402704.png" alt="image-20241106133402704"></p>
+<p>2.也可以加载别人的原理图库，在AD24中变成了【Libraries Preferences】，不是【File-based Libraries Preferences…】了，然后找到别人的原理图库文件，需要【SchLib为后缀的文件】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106133249237.png" alt="image-20241106133249237"></p>
+<p>3.鼠标点击选中之后拖动到左边原理图页</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106134716007.png" alt="image-20241106134716007"></p>
+<h2 id="第十讲-元件的复制、剪切、旋转及镜像"><a href="#第十讲-元件的复制、剪切、旋转及镜像" class="headerlink" title="第十讲 元件的复制、剪切、旋转及镜像"></a>第十讲 元件的复制、剪切、旋转及镜像</h2><p>1.元件的复制</p>
+<p>1)可以按住”Shit”键，然后拖动一个元件即可复制<br>2)如果想多个一起复制，可以选择多种类元件，再执行步骤(1)即可<br>3)根据实际需要放置各类元件，然后进行复制即可</p>
+<p>2.原理图只是电气性能在图纸上的表示，可以对绘制图形进行水平或者垂直翻转而不影响电气属性。<br>拖动元件的状态下按X”键或者Y”键，实现X轴镜像或者Y轴镜像；<br>①逆时针旋转选中元件，快捷键为“空格键”；<br>②顺时针旋转选中对象，快捷键为”Shit+空格键”。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106142209501.png" alt="image-20241106142209501"></p>
+<h2 id="第十一讲-元件的排列与对齐"><a href="#第十一讲-元件的排列与对齐" class="headerlink" title="第十一讲 元件的排列与对齐"></a>第十一讲 元件的排列与对齐</h2><p>1.放置好元件之后，为了使所放置的元件更加规范和美观，可以利用Altium Designer提供的排列与对齐命令来进行操作。<br>常用命令：为了更加直观地学习这些排列与对齐命令，对此进行常用命令的介绍。</p>
+<p>先选中器件，快捷键【a】</p>
+<p>①向左对齐【L】②向右对齐【r】③向上对齐【t】④向下对齐【b】。<br>①D水平等间距【d】。②垂直等间距【i】。</p>
+<h2 id="第十二讲-绘制器件导线及导线的属性设置"><a href="#第十二讲-绘制器件导线及导线的属性设置" class="headerlink" title="第十二讲 绘制器件导线及导线的属性设置"></a>第十二讲 绘制器件导线及导线的属性设置</h2><p>1.元件放置好之后，就可对电气连接进行设置，让没有关联的元件之间形成逻辑联系，组成各个电路功能网；<br>绘制导线：导线是用来连接电气元件、具有电气特性的连线：【快捷键ctrl+w或者pw】<br>导线属性设置：在导线放置状态下按“<strong>Tab</strong>“键，可以对导线属性，颜色等设置；<br>布线角度切换：在布线的状态下可以按快捷键“<strong>Sift+空格键</strong>”切换布线角度。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106144428357.png" alt="image-20241106144428357"></p>
+<h2 id="第十三讲-放置器件网络标号链接"><a href="#第十三讲-放置器件网络标号链接" class="headerlink" title="第十三讲 放置器件网络标号链接"></a>第十三讲 放置器件网络标号链接</h2><p>1.对于一些比较长的连接网络或者数量比较多的网络连接，绘制时如果全部采用导线的连接方式去连接，很难从表观上去识别连接关系，不方便设计。这个时候可以采取网络标号(Net Label)方式来协助设计，它也是网络连接的一种。【快捷键是pn】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106144901051.png" alt="image-20241106144901051"></p>
+<p>2.可以对网络标号的颜色、名称、是否锁定进行设置。一般来说主要是设置好名称，增强原理图的可读性。</p>
+<p>3.对于原理图设计，Altium Designer?专门提供一种电源和地的符号，是一种特殊的网络标号，可以让设计工程师比较形象地识别：</p>
+<h2 id="第十四讲-非电气对象放置（辅助线、文字等）"><a href="#第十四讲-非电气对象放置（辅助线、文字等）" class="headerlink" title="第十四讲 非电气对象放置（辅助线、文字等）"></a>第十四讲 非电气对象放置（辅助线、文字等）</h2><p>1.原理图中的非电气对象包含辅助线、文字注释等，它们没有电气属性，但是可以增强原理图的可读性。本节对常用非电气对象的放置进行说明。【放置走线pL，放置文本字符串pt】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106150613655.png" alt="image-20241106150613655"></p>
+<p>2.一定要弄清楚“放置绘图工具线和“放置线的不同，前面一种是有电气性能的，后面一种是没有电气性能的，设计当中干万不要用后面一种充当电气线去连接，否则会产生电气开路的现象。</p>
+<h2 id="第十五讲-元器件的位号编号排序及注意事项"><a href="#第十五讲-元器件的位号编号排序及注意事项" class="headerlink" title="第十五讲 元器件的位号编号排序及注意事项"></a>第十五讲 元器件的位号编号排序及注意事项</h2><p>1.原理图绘制常利用复制的功能，复制完之后会存在位号重复或者同类型元件编号杂乱的现象，使后期BOM表的整理十分不便。重新编号可以对原理图中的位号进行复位和统一，方便设计及维护。</p>
+<p>【快捷键taa】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106151813738.png" alt="image-20241106151813738"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106152033063.png" alt="image-20241106152033063"></p>
+<h2 id="第十六讲-如何快速查找原理图中的元件"><a href="#第十六讲-如何快速查找原理图中的元件" class="headerlink" title="第十六讲 如何快速查找原理图中的元件"></a>第十六讲 如何快速查找原理图中的元件</h2><p>1.大面积的原理图无法直接定位某个元件的位号、网络标签所在的位置，可以通过跳转和查找功能来实现定位查找。【快捷键ctrl+f】或者【快捷键jc】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106153707676.png" alt="image-20241106153707676"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106154002117.png" alt="image-20241106154002117"></p>
+<h2 id="第十七讲-原理图常见错误的编译与检查"><a href="#第十七讲-原理图常见错误的编译与检查" class="headerlink" title="第十七讲 原理图常见错误的编译与检查"></a>第十七讲 原理图常见错误的编译与检查</h2><p>1.一份好的原理图，不只是设计完成，同样需要对其进行常规性的检查核对。在设计完原理图之后、设计PCB之前，工程师可以利用软件自带的ERC功能对常规的一些电气性能进行检查，避免一些常规性错误和查漏补缺，以及为正确完整地导入PCB进行电路设计做准备。</p>
+<p>1）设置编译查错对象的报错等级</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106155524201.png" alt="image-20241106155524201"></p>
+<p>对常规检查来说，集中检查以下对象。<br>①Duplicate Part Designators:存在重复元件位号<br>②Floating Net Labels:存在悬浮的网络标号<br>③Floating Power Objects:存在悬浮的电源端口<br>④Nets with only one pin:存在单端网络</p>
+<p>2）编译排错</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106160229502.png" alt="image-20241106160229502"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106160402563.png" alt="image-20241106160402563"></p>
+<p>对于重复的名称，改过来就行了。</p>
+<p>对于单端，就需要查看是否是写错了，还是不需要连接。不需要连接需要放置No ERC标号【快捷键是<strong>pvn</strong>】</p>
+<p>其他报错的解决办法可以自行使用搜索引擎来解决。</p>
+<p><strong>【alt+鼠标左键】高亮显示相关端口</strong>（可能只有我看得懂）</p>
+<h2 id="第十八讲-BOM物料表的导出"><a href="#第十八讲-BOM物料表的导出" class="headerlink" title="第十八讲 BOM物料表的导出"></a>第十八讲 BOM物料表的导出</h2><p>1.当原理图设计完成之后，就可以开始整理物料清单准备采购元件了。如何将设计中用到的元件的信息进行输出以方便采购呢？这个时候就会用到BOM表了。（一般选择xlsx根式，根据需求来）</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106162642287.png" alt="image-20241106162642287"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106163032524.png" alt="image-20241106163032524"></p>
+<h2 id="第十九讲-原理图的PDF打印输出"><a href="#第十九讲-原理图的PDF打印输出" class="headerlink" title="第十九讲 原理图的PDF打印输出"></a>第十九讲 原理图的PDF打印输出</h2><p>1.在使用Altium Designeri设计完原理图后，可以把原理图以PDF的形式输出图纸，发给别人阅读，从而尽量降低被直接篡改的风险。Altium Designer是Protel99SE的高级版本，自带有PDF文件输出功能，即“智能PDF”这个功能，可以把原理图以PDF的形式进行输出。【快捷键<strong>fm</strong>】，导出当前文档然后一路Next，最后Finish即可。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106163626860.png" alt="image-20241106163626860"></p>
+<h2 id="第二十讲-原理图常用设计快捷命令汇总"><a href="#第二十讲-原理图常用设计快捷命令汇总" class="headerlink" title="第二十讲 原理图常用设计快捷命令汇总"></a>第二十讲 原理图常用设计快捷命令汇总</h2><p><strong>快捷键不区分大小写。</strong></p>
+<p>1）常用试图快捷命令</p>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">快捷键</th>
+<th align="left">功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">适合文件</td>
+<td align="center">VD</td>
+<td align="left">当设计图不在目视范围内时，可以快速归位</td>
+</tr>
+<tr>
+<td align="center">适合所有对象</td>
+<td align="center">VF</td>
+<td align="left">对整个图纸文档进行图纸归位</td>
+</tr>
+<tr>
+<td align="center">放大</td>
+<td align="center">Page Up</td>
+<td align="left">以鼠标指针为中心进行放大</td>
+</tr>
+<tr>
+<td align="center">缩小</td>
+<td align="center">Page Down</td>
+<td align="left">以鼠标指针为中心进行缩小</td>
+</tr>
+<tr>
+<td align="center">选中的对象</td>
+<td align="center">VE</td>
+<td align="left">可以快速对选择的对象进行放大显示</td>
+</tr>
+</tbody></table>
+<p>2）常用排列与对齐快捷命令</p>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">快捷键</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">左对齐</td>
+<td align="center">AL</td>
+<td>向左对齐</td>
+</tr>
+<tr>
+<td align="center">右对齐</td>
+<td align="center">AR</td>
+<td>向右对齐</td>
+</tr>
+<tr>
+<td align="center">顶对齐</td>
+<td align="center">AT</td>
+<td>向顶部对齐</td>
+</tr>
+<tr>
+<td align="center">底对齐</td>
+<td align="center">AB</td>
+<td>向底部对齐</td>
+</tr>
+<tr>
+<td align="center">水平分布</td>
+<td align="center">AD</td>
+<td>水平等间距分布对齐</td>
+</tr>
+<tr>
+<td align="center">垂直分布</td>
+<td align="center">AI</td>
+<td>垂直等间距分布对齐</td>
+</tr>
+</tbody></table>
+<p>3）其他常用快捷命令</p>
+<table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">快捷键</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">放置-线</td>
+<td align="center">PW</td>
+<td>放置导线</td>
+</tr>
+<tr>
+<td align="center">放置-总线</td>
+<td align="center">PB</td>
+<td>放置总线</td>
+</tr>
+<tr>
+<td align="center">放置-器件</td>
+<td align="center">PP</td>
+<td>放置元件</td>
+</tr>
+<tr>
+<td align="center">放置-网络标签</td>
+<td align="center">PN</td>
+<td>放置网络标签</td>
+</tr>
+<tr>
+<td align="center">放置-文字字符串</td>
+<td align="center">PT</td>
+<td>放置文字字符串</td>
+</tr>
+<tr>
+<td align="center">删除</td>
+<td align="center">ED</td>
+<td>删除操作</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Shift+拖动</td>
+<td>递增复制</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Ctrl+F</td>
+<td>快速查找</td>
+</tr>
+<tr>
+<td align="center">跳转到元件</td>
+<td align="center">JC</td>
+<td>跳转到某元件</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Alt+鼠标左键</td>
+<td>高亮相同网络</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">TP</td>
+<td>系统参数设置</td>
+</tr>
+</tbody></table>
+<h2 id="第二十一讲-PCB封装元素组成及简单PCB封装创建"><a href="#第二十一讲-PCB封装元素组成及简单PCB封装创建" class="headerlink" title="第二十一讲 PCB封装元素组成及简单PCB封装创建"></a>第二十一讲 PCB封装元素组成及简单PCB封装创建</h2><p>【快捷键Ctrl+D】切换到3D。【Shift+鼠标右键】旋转。</p>
+<p>1.PCB封装的组成一般有以下元素，如图所示。<br>(1)PCB焊盘：用来焊接元件管脚的载体。<br>(2)管脚序号：用来和元件进行电气连接关系匹配的序号。<br>(3)元件丝印：用来描述元件腔体大小的识别框。<br>(4)阻焊：防止绿油覆盖，可以有效地保护焊盘焊接区域。<br>(5)1脚标识&#x2F;极性标识：主要是用来定位元件方向的标识符号。</p>
+<p>同之前一样，先切换到pcb库文件，然后点击“Panels-PCB Library”，这里指示一下横向为x轴，纵向为y轴，要判断正负，可以移动鼠标看左上角x y数值的变化。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241106171426195.png" alt="image-20241106171426195"></p>
+<p>2.放置焊盘【快捷键pp】，放置之后，双击焊盘。可以设置焊盘号，所在层，焊盘大小以及焊盘形状等参数。图中灰色圆圈带×的就是中心点，这个很重要，就是原点。其他所有的位置都是基于这个来的。<img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107105930661.png" alt="image-20241107105930661"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107110040330.png" alt="image-20241107110040330"></p>
+<p>3.绘制相同的焊盘可以复制粘贴，重合在一起然后用偏移来移动。快捷键【复制<strong>Ctrl+c</strong>，粘贴<strong>Ctrl+v</strong>，偏移<strong>mx</strong>】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107111429096.png" alt="image-20241107111429096"></p>
+<p>4.设置原点的位置，这里设置原点的位置是为了方便后面，绘制元件丝印。把原点设置到两个焊盘的中心，【快捷键<strong>efc</strong>】【<strong>efL</strong> 可以自己放置原点的位置】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107112638288.png" alt="image-20241107112638288"></p>
+<p>5.绘制元件顶层丝印，需要先切换到顶层丝印层【Top Overlay】，然后走线。【快捷键pL】【Shift+空格】可以切换走线的幅度，【Tab】可以中途切换线宽，线宽一般5mil。下图就是0603R封装。其他封装可自行学习。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107114325418.png" alt="image-20241107114325418"></p>
+<h2 id="第二十二讲-异形焊盘PCB封装创建"><a href="#第二十二讲-异形焊盘PCB封装创建" class="headerlink" title="第二十二讲 异形焊盘PCB封装创建"></a>第二十二讲 异形焊盘PCB封装创建</h2><p>1.基于封装元素及规格尺寸要求，可以多元素进行组合叠加设计，从而组成一个异形焊盘，并由此制作异形PCB封装。例如下图这些焊盘，需要多个元素进行组合叠加设计。双击焊盘，调整参数，多个焊盘叠加，自己try一下。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107130416918.png" alt="image-20241107130416918"></p>
+<p>2.也可以通过pcb辅助一下。放置走线，先把大概的图形画好，然后转换一下，快捷键【tve】。按照PCB封装组成的那五个步骤。先叠加一个焊盘，然后阻焊的话，<strong>选中一条线然后按Tab键</strong>。然后输入快捷键【dr】设计规则。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107131209641.png" alt="image-20241107131209641"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107132625923.png" alt="image-20241107132625923"></p>
+<p>3.这里都是为了阻焊，快捷键【tj】绘制外形，然后删除里面的走线。选中一段线然后按Tab键全选。然后选中外面的线，双击把线改小。再次选中外围的线，然后快捷键【tve】，把里面填充一下，双击切换到【Top Solder】层，即阻焊层。在次选中外围线条，把他删掉，即可。这样一个异形焊盘就画好了，画好之后Ctrl+X剪切一下。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107132759101.png" alt="image-20241107132759101"></p>
+<p>4.粘贴到PCB库这边，然后画丝印，这样就完成一个异形PCB库的封装了。也有其他方法，可以自行探索。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107133840462.png" alt="image-20241107133840462"></p>
+<h2 id="第二十三讲-IPC封装创建向导的利用"><a href="#第二十三讲-IPC封装创建向导的利用" class="headerlink" title="第二十三讲 IPC封装创建向导的利用"></a>第二十三讲 IPC封装创建向导的利用</h2><p>1.直接填数据不用计算、满足IPC行业标准、3D PCB封装模型。可以不用自己画，按照官网数据填写，然后生成PCB库。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107140229550.png" alt="image-20241107140229550"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107140425427.png" alt="image-20241107140425427"></p>
+<p>2.参数的填写，去官网找到相关数据手册，查看相应参数。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107140837599.png" alt="image-20241107140837599"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107140908146.png" alt="image-20241107140908146"></p>
+<h2 id="第二十四讲-库安装与如何调用他人的PCB库"><a href="#第二十四讲-库安装与如何调用他人的PCB库" class="headerlink" title="第二十四讲 库安装与如何调用他人的PCB库"></a>第二十四讲 库安装与如何调用他人的PCB库</h2><p>1.类似于元件库，有时候由于拥有多个PCB封装库，不方便管理，需要把多个PC封装合并到一个库中。<br>PCB库的来源：</p>
+<p>1）复制现有库；可以直接从pcb里面复制过来。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107142801460.png" alt="image-20241107142801460"></p>
+<p>2）已有PCB进行库生成；</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107142811343.png" alt="image-20241107142811343"></p>
+<p>3）Ic封装网(<a target="_blank" rel="noopener" href="http://www.iclib.com/">www.iclib.com</a>)</p>
+<h2 id="第二十五讲-PCB封装的检查与报告"><a href="#第二十五讲-PCB封装的检查与报告" class="headerlink" title="第二十五讲 PCB封装的检查与报告"></a>第二十五讲 PCB封装的检查与报告</h2><p>1.Altium Designer提供PCB封装错误的检查功能。创建完封装之后，可以执行菜单命令“报告-元件规侧检查”，对所创建的封装进行一些常规检查，快捷键【RR】<br>(1)Duplicate-Pads:检查重复的焊盘。<br>(2)Duplicate-Primitives:检查重复的元素，包括丝印、填充等。<br>(3)Duplicate-.Footprints:检查重复的封装。<br>(4)Constraints-Missing Pad Names:检查PcB封装中缺失的焊盘名称。<br>(5)Constraints-Shorted Copper:检查导线短路。<br>(6)Constraints-Mirrored Component:检查镜像的元件。<br>(7)Constraints-Unconnected Copper::检查没有连接的导线铜皮。<br>(8)Constraints-Offset Component Reference:检查参考点是否在本体进行设置。<br>(9)Constraints-Check All Components:检查所有的PCB封装。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107143911318.png" alt="image-20241107143911318"></p>
+<p>2.排错，自行使用搜索引擎。</p>
+<h2 id="第二十六讲-3D-PCB封装模型调用与创建"><a href="#第二十六讲-3D-PCB封装模型调用与创建" class="headerlink" title="第二十六讲 3D PCB封装模型调用与创建"></a>第二十六讲 3D PCB封装模型调用与创建</h2><p>1.AD的3DPCB设计比较简单，C只需建立库的3D模型（即工作就在库的设计）<br>3D模型来源：</p>
+<p>1）自绘制3D模型；3D模型在<strong>机械1层</strong>。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107145937999.png" alt="image-20241107145937999"></p>
+<p>绘制好后，需要更新到PCB才能生效。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107145728757.png" alt="image-20241107145728757"></p>
+<p>2）Ic封装网(<a target="_blank" rel="noopener" href="http://www.iclib.com)下载;【.step文件】【快捷键po】然后选择文件./">www.iclib.com)下载；【.step文件】【快捷键po】然后选择文件。</a></p>
+<p>3）SolidWorks等专业3D软件绘制导入</p>
+<h2 id="第二十七讲-原理图如何导入PCB及导入常见报错"><a href="#第二十七讲-原理图如何导入PCB及导入常见报错" class="headerlink" title="第二十七讲 原理图如何导入PCB及导入常见报错"></a>第二十七讲 原理图如何导入PCB及导入常见报错</h2><p>1.在绘制PCB之前我们首先要做的是把原理图与我们PCB进行交互导入。<br>确保这个PCB文件一定在当前工程中，如果是”Free Documents”是不能导入成功的，这一点一定要注意<br>PCB导入过程不是一帆风顺的，经常出现各种问题，主要检查封装，封装名称不匹配，引脚号没有匹配。原理图和PCB之间的网路连接就是通过管脚号。</p>
+<p>1）原理图导入PCB，先打开原理图	，点击设计，然后选择第一项。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107152449766.png" alt="image-20241107152449766"></p>
+<h2 id="第二十八讲-快速定义PCB板框与DXF导入定义"><a href="#第二十八讲-快速定义PCB板框与DXF导入定义" class="headerlink" title="第二十八讲 快速定义PCB板框与DXF导入定义"></a>第二十八讲 快速定义PCB板框与DXF导入定义</h2><p>1.板框一定是闭合的，不然无法定义成功。在机械1层画线，线宽10mil。然后定义板框，【快捷键dsd】。这是一种方法。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107152920654.png" alt="image-20241107152920654"></p>
+<p>2.结构导入、尽量低版本DXF文件导入，这里导入的是CAD里面的文件，主要就是为了制作板框。导入到机械二层。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107154939656.png" alt="image-20241107154939656"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107154724966.png" alt="image-20241107154724966"></p>
+<p>3.通过参考点复制【快捷键Ctrl+C】，然后通过特殊粘贴【快捷键ea】，粘贴到机械一层。然后选中边框使用快捷键制作板框【dsd】。挖孔可以选择边框，然后快捷键【tvb】。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107154441021.png" alt="image-20241107154441021"></p>
+<h2 id="第二十九讲-固定孔及器件的精准定义"><a href="#第二十九讲-固定孔及器件的精准定义" class="headerlink" title="第二十九讲 固定孔及器件的精准定义"></a>第二十九讲 固定孔及器件的精准定义</h2><p>1.对于导入型板框，其有实物结构模型，固定孔的位置及大小已经定义好，只能严格按照要求的位置和大小精准地放置。对于开发板，因为不需要考虑有外壳，只需PCBA即可，对于固定孔的位置及大小要求不那么严格，一般按照常规进行设置即可。<br>(1)位置要求：放置在离交流中心间距轴5mm、Y轴5mm的位置。<br>(2)大小要求：一般采用直径为3mm的非金属化孔。</p>
+<p>放置固定孔：【快捷键pp】放置焊盘，然后选中焊盘设置X-Size，Y-Size，Size以及取消勾选Plated</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115112349436.png" alt="image-20241115112349436"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115114610835.png" alt="image-20241115114610835"></p>
+<h2 id="第三十讲-层叠的定义及添加"><a href="#第三十讲-层叠的定义及添加" class="headerlink" title="第三十讲 层叠的定义及添加"></a>第三十讲 层叠的定义及添加</h2><p>1.对高速多层板来说，默认的两层设计无法满足布线信号质量及走线密度要求，这个时候需要对PCB层叠进行添加，以满足设计的要求。</p>
+<p>1）在PCB界面快捷键【dk】打开层叠管理器，默认是两层板，两层板是由顶层丝印【Top Overlay】，顶层阻焊【Top Solder】，顶层【Top 】，FR-4板子，底层【Bottom】，底层阻焊【Bottom Solder】以及底层丝印【Bottom Overlay】组成。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115115500000.png" alt="image-20241115115500000"></p>
+<p>2）添加一层signal层【正片层】以及一层plane层【负片层】，保存再回到PCB板，这时就是四层板。正片层放置的走线就是铜，负片层恰恰相反，放置的走线不是铜，只是一个分割带。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115120837640.png" alt="image-20241115120837640"></p>
+<h2 id="第三十一讲-PCB的交互式与模块化布局操作"><a href="#第三十一讲-PCB的交互式与模块化布局操作" class="headerlink" title="第三十一讲 PCB的交互式与模块化布局操作"></a>第三十一讲 PCB的交互式与模块化布局操作</h2><p>1.为了方便元件的找寻，需要把原图与PC对应起来，使两者之间能相互映射，简称交互。利用交互式布局可以比较快速地定位元件，从而缩短设计时间，提高工作效率。菜单命令“<strong>工具-交叉选择模式</strong>”，激活交互模式。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115121921331.png" alt="image-20241115121921331"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115122337011.png" alt="image-20241115122337011"></p>
+<p>2.这里介绍一个元件排列的功能，即矩形元件放置框，可以在布局初期结合元件的交互，方便地把一堆杂乱的元件按模块分开并摆放在一定的区域内。<br>利用这个功能，可以把原理图上所有的功能模块进行快速的分块。</p>
+<p>【快捷键toL】然后框选一块区域。高亮的器件就会集中到选择的框中。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241115122525328.png" alt="image-20241115122525328"></p>
+<h2 id="第三十二讲-PCB布局的常见操作命令介绍"><a href="#第三十二讲-PCB布局的常见操作命令介绍" class="headerlink" title="第三十二讲 PCB布局的常见操作命令介绍"></a>第三十二讲 PCB布局的常见操作命令介绍</h2><p>1.器件的框选</p>
+<p>1）从上往下框选，只会选中完全框柱的器件</p>
+<p>2）从下往上框选，会选中所有接触到的器件</p>
+<p>3）【快捷键sn】可以选择网络，这样方便连线。</p>
+<p>2.器件的移动，选中目标然后，快捷键【mx】，选择偏移的位置。</p>
+<p>3.器件的对齐，看第十一讲。或者第二十讲。</p>
+<p>4.器件快速换层，选中器件，拖动的时候然后按【L】</p>
+<p>5.器件的联合处理，框选器件，然后联合。这样联合起来的</p>
+<p>6.器件的锁定，将器件锁定到固定位置。选中器件，双击然后把【location】这栏的锁，点击锁定。</p>
+<h2 id="第三十三讲-鼠线的打开及关闭"><a href="#第三十三讲-鼠线的打开及关闭" class="headerlink" title="第三十三讲 鼠线的打开及关闭"></a>第三十三讲 鼠线的打开及关闭</h2><p>1.鼠线又叫飞线，指两点间表示连接关系的线。鼠线有利于理清信号的流向，有逻辑地进行布线操作。在进行PCB布线时，可以选择性地对某类网络或某个网络的扇线进行打开与关闭。</p>
+<p>很多初学者反馈，进行了鼠线打开操作之后，鼠线还是无法显示，可以从如下两个方面检查：<br>1)检查鼠线显示层是否被打开：按快捷键”L”,检查如图6-53所示的界面中的”Connection Lines”选项是否勾选，如果没有勾选请勾选。<br>2)在PCB对象编辑窗口中，请选择”Nets”,不要选择”From-To Editor’”或者其他</p>
+<h2 id="第三十四讲-CLass创建与CLass的应用"><a href="#第三十四讲-CLass创建与CLass的应用" class="headerlink" title="第三十四讲 CLass创建与CLass的应用"></a>第三十四讲 CLass创建与CLass的应用</h2><p>1.clsss就是类，同属性网络或元件或层或差分放置一起构成一个类别。相同属性的网络放置在一起，就是网络类90欧姆的USB差分、HOST、OTG的差分放置一起，构成90欧姆差分类，分类的目的在于可以对相同属性的类进行统一的规则的约束或编辑管理。</p>
+<p>1）快捷键【dc】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117162417660.png" alt="image-20241117162417660"><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117162709180.png" alt="image-20241117162709180"></p>
+<p>2）可以统一设置线宽规则，快捷键【dr】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117163020924.png" alt="image-20241117163020924"></p>
+<p>3）差分信号，先新建一个差分class，按照之前的方法，找到差分网络。然后”Panels-PCB”,然后如下操作。差分信号，走线的时候要采用”交互式差分对布线”，一起走线，因为差分信号是通过压差来判断逻辑0和逻辑1。需要等长，不然很容易出错。为什么要用差分信号捏，是因为差分信号抗干扰能力强。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117164352367.png" alt="image-20241117164352367"></p>
+<h2 id="第三十五讲-PCB布线的常用操作命令介绍"><a href="#第三十五讲-PCB布线的常用操作命令介绍" class="headerlink" title="第三十五讲 PCB布线的常用操作命令介绍"></a>第三十五讲 PCB布线的常用操作命令介绍</h2><p>1.基本操作【先信号 再电源 最后GND】</p>
+<p>1）多根走线的应用</p>
+<p>2）带网络粘贴</p>
+<p>快捷键【ea】特殊粘贴。取消勾选”粘贴到当前层”。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117170408526.png" alt="image-20241117170408526"></p>
+<p>3）元素显示与隐藏</p>
+<p>快捷键【L】，可以隐藏焊盘等。也可以采用【Shift+S】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117170937352.png" alt="image-20241117170937352"></p>
+<p>4）网络颜色的变更</p>
+<p>5）打孔的处理</p>
+<p>推荐错位打孔。</p>
+<p>6）层的关闭与打开</p>
+<p>2.对于一些常用的操作命令，设置快捷键，利用快捷键可以有效的提高设计效率</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107160801077.png" alt="image-20241107160801077"></p>
+<h2 id="第三十六讲-Active-Route的自动布线介绍"><a href="#第三十六讲-Active-Route的自动布线介绍" class="headerlink" title="第三十六讲 Active Route的自动布线介绍"></a>第三十六讲 Active Route的自动布线介绍</h2><p>1.ActiveRoute功能（自动布线功能），强大而实用，布线就是快！</p>
+<p>需要安装扩展，自己百度。</p>
+<h2 id="第三十七讲-泪滴的添加与移除"><a href="#第三十七讲-泪滴的添加与移除" class="headerlink" title="第三十七讲 泪滴的添加与移除"></a>第三十七讲 泪滴的添加与移除</h2><p>1.泪滴的作用<br>(1)避免电路板受到巨大外力冲撞时导线与焊盘或者导线与导孔的接触点断开，也可使电路板显得更加美观。<br>(2)焊接上，可以保护焊盘，避免多次焊接时焊盘脱落；生产时，可以避免蚀刻不均、过孔偏位出现的裂缝等。<br>(3)信号传输时平滑阻抗，减少阻抗的急剧跳变；避免高频信号传输时由于线宽突然变小而造成反射，可使走线与元件焊盘之间的连接趋于平稳过渡化。</p>
+<p>【快捷键 te】，参数自己调。自行百度。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117174248975.png" alt="image-20241117174248975"></p>
+<h2 id="第三十八讲-局部敷铜及网络的添加"><a href="#第三十八讲-局部敷铜及网络的添加" class="headerlink" title="第三十八讲 局部敷铜及网络的添加"></a>第三十八讲 局部敷铜及网络的添加</h2><p>1.对于PCB设计中的一些电源模块，因为考虑到电流的大小载流，需要加宽载流路径，走线的话，因为路径上含有过孔或者其他阻碍物，不会自动避让，不方便进行DRC处理，这个时候可以用到局部敷铜。</p>
+<p>【快捷键 pg】然后选择区域。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241117175950171.png" alt="image-20241117175950171"></p>
+<p>2.由于AD高版本的铜皮设置网络，无法直接设定铜皮网络，需要选择然后给予网络，然后再重新灌铜下，步骤相对繁琐，凡亿教育对此有开发一个脚本文件，方便大家。具体使用方法可以参考下面步骤：<br>1)百度找到“PCB联盟网”，在联盟网的搜素框中搜索关键词“脚本”，下载敷铜脚本文件。<br>2)运行Altium Designer菜单命令”文件-运行脚本”，打开脚本文件加载汉对话框<br>3)选择脚本对话框的左下角命令“浏览来自文件”，选择下载的脚本文件“FY AD Tools.PrjScr”,加载完成之后，选择其中的“FY_Main.Pas”,即可完成本脚本的调用</p>
+<h2 id="第三十九讲-异形敷铜的创建"><a href="#第三十九讲-异形敷铜的创建" class="headerlink" title="第三十九讲 异形敷铜的创建"></a>第三十九讲 异形敷铜的创建</h2><p>1.很多情况下，有一个圆形的板子或者非规则形状的板子，需要创建一个和板子形状一模一样的敷铜，该怎么处理呢？下面来说明下异形敷铜的创建。“工具-转换-从选择的元素创建敷铜”</p>
+<p>【快捷键 tvg】，要先选中敷铜区域。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118135448796.png" alt="image-20241118135448796"></p>
+<h2 id="第四十讲-Cutout的放置及敷铜的修正优化"><a href="#第四十讲-Cutout的放置及敷铜的修正优化" class="headerlink" title="第四十讲 Cutout的放置及敷铜的修正优化"></a>第四十讲 Cutout的放置及敷铜的修正优化</h2><p>1.有时在敷铜之后还需要去删除一些碎铜或尖岬铜皮，Cutout的功能就是禁止铜敷进放置Cutoutl区域，只针对敷铜有效，不作为独立的铜存在，放置完成后不用删除。</p>
+<p>cutout设置属性可以对的多层生效。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118135751335.png" alt="image-20241118135751335"></p>
+<h2 id="第四十一讲-常用规则-间距规则的讲解"><a href="#第四十一讲-常用规则-间距规则的讲解" class="headerlink" title="第四十一讲 常用规则-间距规则的讲解"></a>第四十一讲 常用规则-间距规则的讲解</h2><p>1.忽略同一封装内的焊盘间距：对于封装本身的间距不计算到设计的规则当中。规则快捷键【dr】，默认最小间距10mil。更多的自行百度。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118140951246.png" alt="image-20241118140951246"></p>
+<p>2.AD22也提供类似低版本那样的、多个间距规则叠加的方法，通过选择第一个适配对象和第二个适配对象来筛选对象和范围。<br>①Where The First Object Matches:选择规则第一个适配对象。<br>②Where The Second Object Matches:选择规则第二个适配对象，与第一个适配对象勾选对象的筛选，即完成规则定义的范围。</p>
+<h2 id="第四十二讲-常用规则-布线线宽规则的讲解"><a href="#第四十二讲-常用规则-布线线宽规则的讲解" class="headerlink" title="第四十二讲 常用规则-布线线宽规则的讲解"></a>第四十二讲 常用规则-布线线宽规则的讲解</h2><p>1.PCB设计时需要用到阻抗线，对每一层的线宽要求是不一致的，同时考虑到电源特性，对电源走线线宽有特殊线宽的要求。<br>Width设有3个值：最大线宽、优选线宽、最小线宽。系统默认值为10il,设置的时候建议最大、最小、优选数据设置为一样的。先归类【可以查看第三十四讲，如何新建类】，然后管理类。后面的自行百度吧。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118150057568.png" alt="image-20241118150057568"></p>
+<h2 id="第四十三讲-规则的使能及优先级的设置"><a href="#第四十三讲-规则的使能及优先级的设置" class="headerlink" title="第四十三讲 规则的使能及优先级的设置"></a>第四十三讲 规则的使能及优先级的设置</h2><p>1.规则设计好之后，需要对规则进行使能，否则设计的规则不会起作用。具体设计当中很多网友反馈自己明明设计好了规则，但是就是不起作用，一般就是这种问题引起的。<br>1）勾选“Enabled”选项以便让设计的规则受到启用。<br>2）调整优先级，理解包含与被包含</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118150807677.png" alt="image-20241118150807677"></p>
+<h2 id="第四十四讲-过孔、阻焊及其他重要规则讲解"><a href="#第四十四讲-过孔、阻焊及其他重要规则讲解" class="headerlink" title="第四十四讲 过孔、阻焊及其他重要规则讲解"></a>第四十四讲 过孔、阻焊及其他重要规则讲解</h2><p>1.过孔规则设置是设置布线中过孔的尺寸，可以设置的参数有过孔焊盘的直径和过孔中的通孔直径，也包括最大值、最小值和优选值。设置时须注意过孔直径和通孔直径的差值不宜过小，否则将不宜于制板加工，常规设置为0.2mm及以上的孔径大小，一般的为了考虑成本设置为0.3mm,也就是12mil的孔径。这些规则跟生产有关也与成本有关。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118151222878.png" alt="image-20241118151222878"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118151250587.png" alt="image-20241118151250587"></p>
+<p>2.阻焊规则设置是设置焊盘到绿油的距离。在电路板制作时，阻焊层要预留一部分空间给焊盘，绿油不至于覆盖到焊盘上去，造成锡膏无法上锡到焊盘，这个延伸量就是防止绿油和焊盘相重叠，不宜设置过小，也不宜设置过大，一般设置为2.5mil。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118151625669.png" alt="image-20241118151625669"></p>
+<h2 id="第四十五讲-全连接及十字花焊盘链接敷铜规则"><a href="#第四十五讲-全连接及十字花焊盘链接敷铜规则" class="headerlink" title="第四十五讲 全连接及十字花焊盘链接敷铜规则"></a>第四十五讲 全连接及十字花焊盘链接敷铜规则</h2><p>1.此规则约束的主要是常规的多边形敷铜与焊盘或过孔之间的连接方式，该规则设置界面中的“Connect Style’”、”Conductors’”和“Conductor Width”的设置，”高级”设置中，提供3种焊盘的连接设置。<br>1)通孔焊盘连接：通孔焊盘的连接，默认设置为花焊盘连接，这样散热均匀，在进行手工焊接的时候不会造成虚焊。<br>2)表贴焊盘连接，默认花焊盘连接，某些电源网络，如需增大电流，可以单独对某个网络或者某个元件采用全连接方式连接。<br>3)Via Connection:过孔的连接，一般默认设置为全连接。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118152842274.png" alt="image-20241118152842274"></p>
+<h2 id="第四十六讲-什么是差分及差分规则的添加"><a href="#第四十六讲-什么是差分及差分规则的添加" class="headerlink" title="第四十六讲 什么是差分及差分规则的添加"></a>第四十六讲 什么是差分及差分规则的添加</h2><p>1.问：何为差分信号？<br>答：通俗地说，就是驱动端发送两个等值、反相的信号，接收端通过比较这两个电压的差值来判断逻辑状态“0”还是“1”。<br>差分走线的线宽和间距对走线的阻抗有很大的相关性，我们基于阻抗控制需要设定走线的线宽大小和间距大小，我们需要设定特殊的规则来进行适配。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118153327138.png" alt="image-20241118153327138"></p>
+<h2 id="第四十七讲-区域规则（Room规则）的设置"><a href="#第四十七讲-区域规则（Room规则）的设置" class="headerlink" title="第四十七讲 区域规则（Room规则）的设置"></a>第四十七讲 区域规则（Room规则）的设置</h2><p>1.区域(Room)规则设置是针对某个区域来设置规则。为了满足设计阻抗和工艺能力的要求，需要对个别区域设置特殊的线宽走线或者间距或者过孔大小等，这时可以对这个区域进行特殊规则设置，常用于各类不同Pitch间距的BGA。【快捷键dmr】，然后框选一块区域。其他的自行百度，有电气规则和线宽规则。熟悉了自然就会了。限制有所有，类，自定义room。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118154059026.png" alt="image-20241118154059026"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118154502619.png" alt="image-20241118154502619"></p>
+<h2 id="第四十八讲-规则的导出与导入"><a href="#第四十八讲-规则的导出与导入" class="headerlink" title="第四十八讲 规则的导出与导入"></a>第四十八讲 规则的导出与导入</h2><p>1.有时设置的规侧则可以套用多个板子，或者是设置一个原始规侧进行规则复位的，这种时候需要用到规则的导入与导出。规则的快捷键就是【dr】。自己记住。不会的自行百度。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118155009122.png" alt="image-20241118155009122"></p>
+<h2 id="第四十九讲-PCB的DRC电气性能检查"><a href="#第四十九讲-PCB的DRC电气性能检查" class="headerlink" title="第四十九讲 PCB的DRC电气性能检查"></a>第四十九讲 PCB的DRC电气性能检查</h2><p>1.前期为了满足各项设计的要求，通常会设置很多约束规则，当一个PCB设计完成之后，通常要进行DRC(Design Rule Check)。DRC就是检查设计是否满足所设置的规则。一个完整的PCB设计必须经过各项电气规则检查，常见的检查包括间距、开路及短路的检查，更加严格的还有差分对、阻抗线等检查。</p>
+<p>2.停止检测50000冲突找时：当系统检测到50000个DRc报错的时候直接停止再检查，系统默认设置一般是500，但设置到500时有些DRC会进行显示，有些DRC不会进行显示，只有修正已存在的错误，再次DRC的时候才会显示，这样对于大板设计非常不方便：<br>设置DRC检查选项，选择需要检查的规则项，在“在线”和“批量”栏中勾选使能检查。<br>一股来说，需要进行DRC的时候两者都进行勾选，方便实时检查和手动检查同时进行。</p>
+<p>【快捷键td】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118155506958.png" alt="image-20241118155506958"></p>
+<p>3.很多学员按照上述步骤进行验证之后，对于验证结果提示的报错不知其含义，导致不知如何下手进行修改，这里给大家罗列出一些常见的DRC验证结果，方便在学习的时候对应知其意修其果。<br>1)Clearance Constraint(Gap&#x3D;8mil)(Al),(Al)间距规则问题，对应检查间距是否满足设置要求<br>2)Short-Circuit Constraint(Allowed&#x3D;:No)(AIl),(AIl)板子某处存在短路，请对应检查PCB走线<br>3)Un-Routed Net Constraint(Al))板子存在开路，需要确保所有的线联通<br>4)Modified Polygon(Allow modified:No),(Allow shelved:No)修改之后的铜皮没有进行重新灌铜操作，不允许这样的铜皮存在。<br>5)Width Constraint(Min&#x3D;8mil)(Max&#x3D;8mil)(Preferred&#x3D;8mi)(Al)线宽规则报错，需要检查走线线宽是否在设置的线宽允许范围内</p>
+<p>6)Routing Via (MinHoleWidth&#x3D;12mil)(MaxHoleWidth&#x3D;12mil)(PreferredHoleWidth&#x3D;12mil)(MinWidth&#x3D;24mil)(MaxWidth&#x3D;24mil)(PreferedWidth&#x3D;24mil)(All)<br>过孔大小规则，检查下PCB设计放置的过孔大小是否是过孔约束规则设置的大小，不是的话改成设置的大小值就不会继续报错。<br>7)Minimum Solder Mask Sliver(Gap&#x3D;10mil)(Disabled)(Al),(AI)最小阻焊桥规则，检查阻焊和阻焊之间的间距必须满足设置值，否测生产的时候绿油桥无法生产（绿油桥一般最小是4mil)。<br>8)Silk To Solder Mask(Clearance&#x3D;10mil)(Disabled)(IsPad),(All)丝E印放置到了阻焊上，阻焊的作用是防止油墨覆盖，生产出来之后丝印残缺，所以不允许，出现此类报错，请对应检查。</p>
+<p>9)Net Antennae(Tolerance&#x3D;Omil)(Disabled)(Al)线头规则，设计中出现了“Stub”线头，请对应检查<br>10)Component Clearance Constraint Horizontal Gap 10mil,Vertical Gap10mil)(Disabled)(AIl),(AIl)器件和器件规则，设置这个规则的目的是的担心器件和器件有交叠导致后期器件贴片的时候冲突。<br>11)Height Constraint (Min&#x3D;0mil)(Max&#x3D;1000mil)(Prefered&#x3D;500mil)(All)设置的限高要求区域，我们通常需要对放置本区域的器件高度进行检查，防止后期装配时和外壳有冲突，请对应检查。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118155811297.png" alt="image-20241118155811297"></p>
+<h2 id="第五十讲-PCB的尺寸大小标注"><a href="#第五十讲-PCB的尺寸大小标注" class="headerlink" title="第五十讲 PCB的尺寸大小标注"></a>第五十讲 PCB的尺寸大小标注</h2><p>1.为了使设计者或生产者更方便地知晓PCB尺寸及相关信息，在设计的时候通常考虑到给设计好的PCB添加尺寸标注。尺寸标注方式分为线性、圆弧半径、角度等形式，下面对最常用的线性标注及圆弧半径标注进行说明。</p>
+<p>尺寸标注一般放置在机械层，快捷键【pdL】，空格切换方向，其他自行百度。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118161222403.png" alt="image-20241118161222403"></p>
+<p>①Layer:放置的层。<br>②Format:显示的格式，如××、××mm[常用]、××(mm)等。<br>③Primary Unit:显示的单位，如mil、mm[常用]、inch等。<br>④)Value Precision:显示的小数位的个数。</p>
+<h2 id="第五十一讲-PCB的点到点与边缘距离测量"><a href="#第五十一讲-PCB的点到点与边缘距离测量" class="headerlink" title="第五十一讲 PCB的点到点与边缘距离测量"></a>第五十一讲 PCB的点到点与边缘距离测量</h2><p>1.距离测量大体分两种：一种是点到点距离的测量，另一种是边到边距离的测量</p>
+<p>1）点到点距离的测量<br>这种测量主要用于对某两个对象之间大概距离的一个评估。执行菜单命令报告-测量距离<br>快捷键“Ctrl+M”或者”RM”</p>
+<p>2）边缘间距的测量<br>这种测量是两个对象边缘和边缘之间的间距测量，不管鼠标选中对象的哪个部位测量，只会测量对<br>象与对象之间最近边缘的直线距离。<br>菜单命令“报告-测量”（快捷键“RP”)。测量的是走线之间的距离</p>
+<h2 id="第五十二讲-器件位号丝印的调整"><a href="#第五十二讲-器件位号丝印的调整" class="headerlink" title="第五十二讲 器件位号丝印的调整"></a>第五十二讲 器件位号丝印的调整</h2><p>1.针对后期元件装配，特别是手工装配元件，一般都得出PCB的装配图，用于元件放料定位之用，这时丝印位号就显示出其必要性了。</p>
+<p>丝印位号调整的原侧及常规推荐尺寸<br>1)丝印位号不上阻焊，放置丝印生产之后缺失。<br>2)丝印位号清晰，字号推荐字宽&#x2F;字高尺寸为4&#x2F;25mil、5&#x2F;30mil、6&#x2F;45mil。<br>3)保持方向统一性，一般一块PCB上不要超过两个方向摆放，推荐字母在左或在下。</p>
+<p>调节丝印的时候，可以快捷键【L】，然后只显示丝印层和阻焊层。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118162655405.png" alt="image-20241118162655405"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241118162829008.png" alt="image-20241118162829008"></p>
+<h2 id="第五十三讲-PCB板LOGO及二维码放置"><a href="#第五十三讲-PCB板LOGO及二维码放置" class="headerlink" title="第五十三讲 PCB板LOGO及二维码放置"></a>第五十三讲 PCB板LOGO及二维码放置</h2><p>1.AD24进行了升级，可以直接进行图片放置，替代了以前的L0G0的放置方式，使导入的L0G0更加高清。快捷键【fh】画一块区域，然后选择想要的图片即可。强烈推荐【我胡桃最好看】</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107173227325.png" alt="image-20241107173227325"></p>
+<p>2.以前的老方法，不推荐。快捷键【fs】（快捷键会冲突）运行脚本，选择脚本文件。这个在网上搜索一下，就可以自己下载。我的在文件放在【E:\Users\Public\Documents\Altium\Altium Designer 2013 PCB Logo Creator】</p>
+<p>运行后会弹出如下弹窗。Load加载的是bmp格式的图片。然后Ctrl+X剪切，Ctrl+V复制到PCB板上，最好选择丝印层。【快捷键Shift+S】可以切换到只看丝印层。就是为了好玩。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107172407655.png" alt="image-20241107172407655"></p>
+<h2 id="第五十四讲-多层线路及装配图PDF的输出"><a href="#第五十四讲-多层线路及装配图PDF的输出" class="headerlink" title="第五十四讲 多层线路及装配图PDF的输出"></a>第五十四讲 多层线路及装配图PDF的输出</h2><p>1.在PCB生产调试期间，为了方便查看文件或者查询相关元件信息，会把PCB设计文件转换成PDF文件。下面介绍常规PDF文件的输出方式。跟之前的原理图输出差不多。快捷键【fm】，然后选择当前文档，一路Next，最后Finish即可。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107173701217.png" alt="image-20241107173701217"></p>
+<p>2.多层输出。。。。。。。</p>
+<h2 id="第五十五讲-生产Gerber文件的输出步骤"><a href="#第五十五讲-生产Gerber文件的输出步骤" class="headerlink" title="第五十五讲 生产Gerber文件的输出步骤"></a>第五十五讲 生产Gerber文件的输出步骤</h2><h3 id="1-生产文件的输出，俗称Gerber-Out。"><a href="#1-生产文件的输出，俗称Gerber-Out。" class="headerlink" title="1.生产文件的输出，俗称Gerber Out。"></a>1.生产文件的输出，俗称Gerber Out。</h3><p>.Gerber文件是所有电路设计软件都可以产生的文件，在电子组装行业又称为模板文件(Stencil Data),在PCB制造业又称为光绘文件。可以说，Gerber文件是电子组装业中最通用、最广泛的文件，生产厂家拿到Gerber文件可以方便和精确地读取制板的信息。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108104812357.png" alt="image-20241108104812357"></p>
+<p>在弹出的【Gerber Setup】对话框中，</p>
+<p>【Units】选择【Inches】,【Outputs:FileName.Extension】选择【*.gbr】。</p>
+<p>切换到【Layers to plot】选项卡，在【Plot Layers】上拉列表中选择【Select Used】选项，然后检查需要输出的层。<br><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108105556908.png" alt="image-20241108105556908"></p>
+<p>切换到【Advanced】选项卡，勾选【Generate DRC Rules export file(.RUL)】复选框，之后单击【Apply】按钮。得到输出预览后直接关闭预览即可。无需保存，单击【Don’t Save】按钮。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108105719703.png" alt="image-20241108105719703"></p>
+<h3 id="2、输出NC-Drill-Files钻孔文件"><a href="#2、输出NC-Drill-Files钻孔文件" class="headerlink" title="2、输出NC Drill Files钻孔文件"></a>2、输出NC Drill Files钻孔文件</h3><p>切换回PCB编辑界面，执行菜单栏中的【文件】→【制造输出】→【NC Drill Files】命令，进行过孔和安装孔的输出设置。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110050689.png" alt="image-20241108110050689"></p>
+<p>在弹出的【NC Drill设置】对话框中，【单位】选择【英寸】,【格式】选择【2:5】，勾选【摒弃前导零】复选框，勾选【生成EIA二进制钻孔文件(.DRL)】复选框，单击【确定】按钮。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110253295.png" alt="image-20241108110253295"></p>
+<p>弹出多个【导入钻孔数据】对话框，直接单击【确定】按钮即可。得到输出预览后直接关闭预览即可。无需保存，单击【Don’t Save】按钮。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110354081.png" alt="image-20241108110354081"></p>
+<h3 id="3、输出Test-Point-Report-IPC网表文件"><a href="#3、输出Test-Point-Report-IPC网表文件" class="headerlink" title="3、输出Test Point Report IPC网表文件"></a>3、输出Test Point Report IPC网表文件</h3><p>切换回PCB编辑界面，执行菜单栏中的【文件】→【制造输出】→【Test Point Report】命令，进行IPC网表文件输出。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110439641.png" alt="image-20241108110439641"></p>
+<p>在弹出的【Fabrication Testpoint Setup】对话框中，勾选【IPC-D-365A】复选框，单击【确定】按钮。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110639707.png" alt="image-20241108110639707"></p>
+<p>弹出多个【导入钻孔数据】对话框，直接单击【确定】按钮即可。得到输出预览后直接关闭预览即可。无需保存，单击【Don’t Save】按钮。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110709341.png" alt="image-20241108110709341"></p>
+<h3 id="4、输出Generates-pick-and-place-files坐标文件"><a href="#4、输出Generates-pick-and-place-files坐标文件" class="headerlink" title="4、输出Generates pick and place files坐标文件"></a>4、输出Generates pick and place files坐标文件</h3><p>切换回PCB编辑界面，执行菜单栏中的【文件】→【装配输出】→【Generates pick and place files】命令，进行坐标文件输出。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110845496.png" alt="image-20241108110845496"></p>
+<p>在弹出的对话框中进行相应设置，【单位】勾选【英制】复选框，【格式】勾选【CSV】复选框，单击【确定】按钮即可输出坐标文件。</p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241108110954241.png" alt="image-20241108110954241"></p>
+<p>至此，Gerber文件输出完成。输出过程中产生3个<code>.cam</code>文件可直接关闭，不用保存.</p>
+<h3 id="5、输出内容Project-Outputs-for-文件夹"><a href="#5、输出内容Project-Outputs-for-文件夹" class="headerlink" title="5、输出内容Project Outputs for *** 文件夹"></a>5、输出内容Project Outputs for *** 文件夹</h3><p>在工程目录下的Project Outputs for ***文件夹中的文件即为Gerber文件。将其重命名，打包成压缩包发给PCB生产厂商制作即可。</p>
+<h2 id="第五十六讲-PCB设计项目的总结及后期规划"><a href="#第五十六讲-PCB设计项目的总结及后期规划" class="headerlink" title="第五十六讲 PCB设计项目的总结及后期规划"></a>第五十六讲 PCB设计项目的总结及后期规划</h2><p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107162639658.png" alt="image-20241107162639658"></p>
+<p><img src="C:\Users\badboy\AppData\Roaming\Typora\typora-user-images\image-20241107162650910.png" alt="image-20241107162650910"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">joy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/11/18/2-Altium%20Designer24/">http://example.com/2024/11/18/2-Altium%20Designer24/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/11/18/4-ubuntu%2018.04%E5%BF%AB%E9%80%9F%E9%87%8D%E5%BC%80/" title="4-Ubuntu 18.04快速重开"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">4-Ubuntu 18.04快速重开</div></div></a></div><div class="next-post pull-right"><a href="/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/" title="3-c和指针"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">3-c和指针</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">joy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Altium-Designer24"><span class="toc-number">1.</span> <span class="toc-text">Altium Designer24</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%AE%B2-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.1.</span> <span class="toc-text">第一讲 学习方法及注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%AE%B2-AD24%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB"><span class="toc-number">1.2.</span> <span class="toc-text">第二讲 AD24的安装与激活</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%8E%B7%E5%8F%96%E8%B5%84%E6%BA%90"><span class="toc-number">1.2.1.</span> <span class="toc-text">1 获取资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.2.2.</span> <span class="toc-text">2 安装软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BD%AF%E4%BB%B6%E7%A0%B4%E8%A7%A3"><span class="toc-number">1.2.3.</span> <span class="toc-text">3 软件破解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%BD%AF%E4%BB%B6%E6%B1%89%E5%8C%96"><span class="toc-number">1.2.4.</span> <span class="toc-text">4 软件汉化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E8%AE%B2-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%99%BD%E5%AE%8C%E6%95%B4%E7%9A%84%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E5%B7%A5%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">第三讲 创建一个空白完整的电子设计工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E8%AE%B2-%E5%85%83%E4%BB%B6%E7%AC%A6%E5%8F%B7%E4%BB%8B%E7%BB%8D%E5%8F%8A%E7%AE%80%E5%8D%95%E7%94%B5%E9%98%BB%E5%AE%B9%E5%8E%9F%E7%90%86%E5%9B%BE%E5%BA%93%E5%88%9B%E5%BB%BA"><span class="toc-number">1.4.</span> <span class="toc-text">第四讲 元件符号介绍及简单电阻容原理图库创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E8%AE%B2-%E5%A4%8D%E6%9D%82%E5%8E%9F%E7%90%86%E5%9B%BE%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA%EF%BC%88%E4%BA%8C%E6%9E%81%E7%AE%A1%E3%80%81%E8%BF%90%E6%94%BE%E7%AD%89%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">第五讲 复杂原理图库的创建（二极管、运放等）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E8%AE%B2-%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8%E4%BB%96%E4%BA%BA%E7%9A%84%E5%8E%9F%E7%90%86%E5%9B%BE%E5%BA%93"><span class="toc-number">1.6.</span> <span class="toc-text">第六讲 如何调用他人的原理图库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E8%AE%B2-%E6%A3%80%E6%B5%8B%E5%8E%9F%E7%90%86%E5%9B%BE%E5%BA%93%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%80%A7%E5%B9%B6%E7%94%9F%E6%88%90%E6%8A%A5%E5%91%8A"><span class="toc-number">1.7.</span> <span class="toc-text">第七讲 检测原理图库的正确性并生成报告</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E9%A1%B5%E7%9A%84%E5%A4%A7%E5%B0%8F%E8%AE%BE%E7%BD%AE%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.8.</span> <span class="toc-text">第八讲 原理图页的大小设置及注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E5%BA%93%E8%B0%83%E7%94%A8%E4%B8%8E%E5%99%A8%E4%BB%B6%E7%9A%84%E6%91%86%E6%94%BE"><span class="toc-number">1.9.</span> <span class="toc-text">第九讲 原理图库调用与器件的摆放</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E8%AE%B2-%E5%85%83%E4%BB%B6%E7%9A%84%E5%A4%8D%E5%88%B6%E3%80%81%E5%89%AA%E5%88%87%E3%80%81%E6%97%8B%E8%BD%AC%E5%8F%8A%E9%95%9C%E5%83%8F"><span class="toc-number">1.10.</span> <span class="toc-text">第十讲 元件的复制、剪切、旋转及镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E8%AE%B2-%E5%85%83%E4%BB%B6%E7%9A%84%E6%8E%92%E5%88%97%E4%B8%8E%E5%AF%B9%E9%BD%90"><span class="toc-number">1.11.</span> <span class="toc-text">第十一讲 元件的排列与对齐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E8%AE%B2-%E7%BB%98%E5%88%B6%E5%99%A8%E4%BB%B6%E5%AF%BC%E7%BA%BF%E5%8F%8A%E5%AF%BC%E7%BA%BF%E7%9A%84%E5%B1%9E%E6%80%A7%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.12.</span> <span class="toc-text">第十二讲 绘制器件导线及导线的属性设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E8%AE%B2-%E6%94%BE%E7%BD%AE%E5%99%A8%E4%BB%B6%E7%BD%91%E7%BB%9C%E6%A0%87%E5%8F%B7%E9%93%BE%E6%8E%A5"><span class="toc-number">1.13.</span> <span class="toc-text">第十三讲 放置器件网络标号链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E8%AE%B2-%E9%9D%9E%E7%94%B5%E6%B0%94%E5%AF%B9%E8%B1%A1%E6%94%BE%E7%BD%AE%EF%BC%88%E8%BE%85%E5%8A%A9%E7%BA%BF%E3%80%81%E6%96%87%E5%AD%97%E7%AD%89%EF%BC%89"><span class="toc-number">1.14.</span> <span class="toc-text">第十四讲 非电气对象放置（辅助线、文字等）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E8%AE%B2-%E5%85%83%E5%99%A8%E4%BB%B6%E7%9A%84%E4%BD%8D%E5%8F%B7%E7%BC%96%E5%8F%B7%E6%8E%92%E5%BA%8F%E5%8F%8A%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.15.</span> <span class="toc-text">第十五讲 元器件的位号编号排序及注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E8%AE%B2-%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%9F%A5%E6%89%BE%E5%8E%9F%E7%90%86%E5%9B%BE%E4%B8%AD%E7%9A%84%E5%85%83%E4%BB%B6"><span class="toc-number">1.16.</span> <span class="toc-text">第十六讲 如何快速查找原理图中的元件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E7%9A%84%E7%BC%96%E8%AF%91%E4%B8%8E%E6%A3%80%E6%9F%A5"><span class="toc-number">1.17.</span> <span class="toc-text">第十七讲 原理图常见错误的编译与检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E8%AE%B2-BOM%E7%89%A9%E6%96%99%E8%A1%A8%E7%9A%84%E5%AF%BC%E5%87%BA"><span class="toc-number">1.18.</span> <span class="toc-text">第十八讲 BOM物料表的导出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E7%9A%84PDF%E6%89%93%E5%8D%B0%E8%BE%93%E5%87%BA"><span class="toc-number">1.19.</span> <span class="toc-text">第十九讲 原理图的PDF打印输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB"><span class="toc-number">1.20.</span> <span class="toc-text">第二十讲 原理图常用设计快捷命令汇总</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E8%AE%B2-PCB%E5%B0%81%E8%A3%85%E5%85%83%E7%B4%A0%E7%BB%84%E6%88%90%E5%8F%8A%E7%AE%80%E5%8D%95PCB%E5%B0%81%E8%A3%85%E5%88%9B%E5%BB%BA"><span class="toc-number">1.21.</span> <span class="toc-text">第二十一讲 PCB封装元素组成及简单PCB封装创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E8%AE%B2-%E5%BC%82%E5%BD%A2%E7%84%8A%E7%9B%98PCB%E5%B0%81%E8%A3%85%E5%88%9B%E5%BB%BA"><span class="toc-number">1.22.</span> <span class="toc-text">第二十二讲 异形焊盘PCB封装创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E8%AE%B2-IPC%E5%B0%81%E8%A3%85%E5%88%9B%E5%BB%BA%E5%90%91%E5%AF%BC%E7%9A%84%E5%88%A9%E7%94%A8"><span class="toc-number">1.23.</span> <span class="toc-text">第二十三讲 IPC封装创建向导的利用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%AE%B2-%E5%BA%93%E5%AE%89%E8%A3%85%E4%B8%8E%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8%E4%BB%96%E4%BA%BA%E7%9A%84PCB%E5%BA%93"><span class="toc-number">1.24.</span> <span class="toc-text">第二十四讲 库安装与如何调用他人的PCB库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E8%AE%B2-PCB%E5%B0%81%E8%A3%85%E7%9A%84%E6%A3%80%E6%9F%A5%E4%B8%8E%E6%8A%A5%E5%91%8A"><span class="toc-number">1.25.</span> <span class="toc-text">第二十五讲 PCB封装的检查与报告</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AD%E8%AE%B2-3D-PCB%E5%B0%81%E8%A3%85%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%94%A8%E4%B8%8E%E5%88%9B%E5%BB%BA"><span class="toc-number">1.26.</span> <span class="toc-text">第二十六讲 3D PCB封装模型调用与创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E8%AE%B2-%E5%8E%9F%E7%90%86%E5%9B%BE%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5PCB%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%B8%B8%E8%A7%81%E6%8A%A5%E9%94%99"><span class="toc-number">1.27.</span> <span class="toc-text">第二十七讲 原理图如何导入PCB及导入常见报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E8%AE%B2-%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%B9%89PCB%E6%9D%BF%E6%A1%86%E4%B8%8EDXF%E5%AF%BC%E5%85%A5%E5%AE%9A%E4%B9%89"><span class="toc-number">1.28.</span> <span class="toc-text">第二十八讲 快速定义PCB板框与DXF导入定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E8%AE%B2-%E5%9B%BA%E5%AE%9A%E5%AD%94%E5%8F%8A%E5%99%A8%E4%BB%B6%E7%9A%84%E7%B2%BE%E5%87%86%E5%AE%9A%E4%B9%89"><span class="toc-number">1.29.</span> <span class="toc-text">第二十九讲 固定孔及器件的精准定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E8%AE%B2-%E5%B1%82%E5%8F%A0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E6%B7%BB%E5%8A%A0"><span class="toc-number">1.30.</span> <span class="toc-text">第三十讲 层叠的定义及添加</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E8%AE%B2-PCB%E7%9A%84%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%B8%8E%E6%A8%A1%E5%9D%97%E5%8C%96%E5%B8%83%E5%B1%80%E6%93%8D%E4%BD%9C"><span class="toc-number">1.31.</span> <span class="toc-text">第三十一讲 PCB的交互式与模块化布局操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E8%AE%B2-PCB%E5%B8%83%E5%B1%80%E7%9A%84%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.32.</span> <span class="toc-text">第三十二讲 PCB布局的常见操作命令介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E8%AE%B2-%E9%BC%A0%E7%BA%BF%E7%9A%84%E6%89%93%E5%BC%80%E5%8F%8A%E5%85%B3%E9%97%AD"><span class="toc-number">1.33.</span> <span class="toc-text">第三十三讲 鼠线的打开及关闭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E5%9B%9B%E8%AE%B2-CLass%E5%88%9B%E5%BB%BA%E4%B8%8ECLass%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.34.</span> <span class="toc-text">第三十四讲 CLass创建与CLass的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%94%E8%AE%B2-PCB%E5%B8%83%E7%BA%BF%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.35.</span> <span class="toc-text">第三十五讲 PCB布线的常用操作命令介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E8%AE%B2-Active-Route%E7%9A%84%E8%87%AA%E5%8A%A8%E5%B8%83%E7%BA%BF%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.36.</span> <span class="toc-text">第三十六讲 Active Route的自动布线介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%83%E8%AE%B2-%E6%B3%AA%E6%BB%B4%E7%9A%84%E6%B7%BB%E5%8A%A0%E4%B8%8E%E7%A7%BB%E9%99%A4"><span class="toc-number">1.37.</span> <span class="toc-text">第三十七讲 泪滴的添加与移除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AB%E8%AE%B2-%E5%B1%80%E9%83%A8%E6%95%B7%E9%93%9C%E5%8F%8A%E7%BD%91%E7%BB%9C%E7%9A%84%E6%B7%BB%E5%8A%A0"><span class="toc-number">1.38.</span> <span class="toc-text">第三十八讲 局部敷铜及网络的添加</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B9%9D%E8%AE%B2-%E5%BC%82%E5%BD%A2%E6%95%B7%E9%93%9C%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.39.</span> <span class="toc-text">第三十九讲 异形敷铜的创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E8%AE%B2-Cutout%E7%9A%84%E6%94%BE%E7%BD%AE%E5%8F%8A%E6%95%B7%E9%93%9C%E7%9A%84%E4%BF%AE%E6%AD%A3%E4%BC%98%E5%8C%96"><span class="toc-number">1.40.</span> <span class="toc-text">第四十讲 Cutout的放置及敷铜的修正优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%80%E8%AE%B2-%E5%B8%B8%E7%94%A8%E8%A7%84%E5%88%99-%E9%97%B4%E8%B7%9D%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B2%E8%A7%A3"><span class="toc-number">1.41.</span> <span class="toc-text">第四十一讲 常用规则-间距规则的讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E8%AE%B2-%E5%B8%B8%E7%94%A8%E8%A7%84%E5%88%99-%E5%B8%83%E7%BA%BF%E7%BA%BF%E5%AE%BD%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B2%E8%A7%A3"><span class="toc-number">1.42.</span> <span class="toc-text">第四十二讲 常用规则-布线线宽规则的讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%89%E8%AE%B2-%E8%A7%84%E5%88%99%E7%9A%84%E4%BD%BF%E8%83%BD%E5%8F%8A%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.43.</span> <span class="toc-text">第四十三讲 规则的使能及优先级的设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%9B%9B%E8%AE%B2-%E8%BF%87%E5%AD%94%E3%80%81%E9%98%BB%E7%84%8A%E5%8F%8A%E5%85%B6%E4%BB%96%E9%87%8D%E8%A6%81%E8%A7%84%E5%88%99%E8%AE%B2%E8%A7%A3"><span class="toc-number">1.44.</span> <span class="toc-text">第四十四讲 过孔、阻焊及其他重要规则讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%94%E8%AE%B2-%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%8F%8A%E5%8D%81%E5%AD%97%E8%8A%B1%E7%84%8A%E7%9B%98%E9%93%BE%E6%8E%A5%E6%95%B7%E9%93%9C%E8%A7%84%E5%88%99"><span class="toc-number">1.45.</span> <span class="toc-text">第四十五讲 全连接及十字花焊盘链接敷铜规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AD%E8%AE%B2-%E4%BB%80%E4%B9%88%E6%98%AF%E5%B7%AE%E5%88%86%E5%8F%8A%E5%B7%AE%E5%88%86%E8%A7%84%E5%88%99%E7%9A%84%E6%B7%BB%E5%8A%A0"><span class="toc-number">1.46.</span> <span class="toc-text">第四十六讲 什么是差分及差分规则的添加</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B8%83%E8%AE%B2-%E5%8C%BA%E5%9F%9F%E8%A7%84%E5%88%99%EF%BC%88Room%E8%A7%84%E5%88%99%EF%BC%89%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.47.</span> <span class="toc-text">第四十七讲 区域规则（Room规则）的设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E5%85%AB%E8%AE%B2-%E8%A7%84%E5%88%99%E7%9A%84%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%AF%BC%E5%85%A5"><span class="toc-number">1.48.</span> <span class="toc-text">第四十八讲 规则的导出与导入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%AE%B2-PCB%E7%9A%84DRC%E7%94%B5%E6%B0%94%E6%80%A7%E8%83%BD%E6%A3%80%E6%9F%A5"><span class="toc-number">1.49.</span> <span class="toc-text">第四十九讲 PCB的DRC电气性能检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E8%AE%B2-PCB%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F%E6%A0%87%E6%B3%A8"><span class="toc-number">1.50.</span> <span class="toc-text">第五十讲 PCB的尺寸大小标注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%80%E8%AE%B2-PCB%E7%9A%84%E7%82%B9%E5%88%B0%E7%82%B9%E4%B8%8E%E8%BE%B9%E7%BC%98%E8%B7%9D%E7%A6%BB%E6%B5%8B%E9%87%8F"><span class="toc-number">1.51.</span> <span class="toc-text">第五十一讲 PCB的点到点与边缘距离测量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%8C%E8%AE%B2-%E5%99%A8%E4%BB%B6%E4%BD%8D%E5%8F%B7%E4%B8%9D%E5%8D%B0%E7%9A%84%E8%B0%83%E6%95%B4"><span class="toc-number">1.52.</span> <span class="toc-text">第五十二讲 器件位号丝印的调整</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%89%E8%AE%B2-PCB%E6%9D%BFLOGO%E5%8F%8A%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%94%BE%E7%BD%AE"><span class="toc-number">1.53.</span> <span class="toc-text">第五十三讲 PCB板LOGO及二维码放置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E5%9B%9B%E8%AE%B2-%E5%A4%9A%E5%B1%82%E7%BA%BF%E8%B7%AF%E5%8F%8A%E8%A3%85%E9%85%8D%E5%9B%BEPDF%E7%9A%84%E8%BE%93%E5%87%BA"><span class="toc-number">1.54.</span> <span class="toc-text">第五十四讲 多层线路及装配图PDF的输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E8%AE%B2-%E7%94%9F%E4%BA%A7Gerber%E6%96%87%E4%BB%B6%E7%9A%84%E8%BE%93%E5%87%BA%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.55.</span> <span class="toc-text">第五十五讲 生产Gerber文件的输出步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%9F%E4%BA%A7%E6%96%87%E4%BB%B6%E7%9A%84%E8%BE%93%E5%87%BA%EF%BC%8C%E4%BF%97%E7%A7%B0Gerber-Out%E3%80%82"><span class="toc-number">1.55.1.</span> <span class="toc-text">1.生产文件的输出，俗称Gerber Out。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E8%BE%93%E5%87%BANC-Drill-Files%E9%92%BB%E5%AD%94%E6%96%87%E4%BB%B6"><span class="toc-number">1.55.2.</span> <span class="toc-text">2、输出NC Drill Files钻孔文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E8%BE%93%E5%87%BATest-Point-Report-IPC%E7%BD%91%E8%A1%A8%E6%96%87%E4%BB%B6"><span class="toc-number">1.55.3.</span> <span class="toc-text">3、输出Test Point Report IPC网表文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E8%BE%93%E5%87%BAGenerates-pick-and-place-files%E5%9D%90%E6%A0%87%E6%96%87%E4%BB%B6"><span class="toc-number">1.55.4.</span> <span class="toc-text">4、输出Generates pick and place files坐标文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E8%BE%93%E5%87%BA%E5%86%85%E5%AE%B9Project-Outputs-for-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">1.55.5.</span> <span class="toc-text">5、输出内容Project Outputs for *** 文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E5%8D%81%E5%85%AD%E8%AE%B2-PCB%E8%AE%BE%E8%AE%A1%E9%A1%B9%E7%9B%AE%E7%9A%84%E6%80%BB%E7%BB%93%E5%8F%8A%E5%90%8E%E6%9C%9F%E8%A7%84%E5%88%92"><span class="toc-number">1.56.</span> <span class="toc-text">第五十六讲 PCB设计项目的总结及后期规划</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/18/4-ubuntu%2018.04%E5%BF%AB%E9%80%9F%E9%87%8D%E5%BC%80/" title="4-Ubuntu 18.04快速重开">4-Ubuntu 18.04快速重开</a><time datetime="2024-11-18T08:42:20.323Z" title="Created 2024-11-18 16:42:20">2024-11-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/18/2-Altium%20Designer24/" title="2-Altium Designer24">2-Altium Designer24</a><time datetime="2024-11-18T08:36:36.333Z" title="Created 2024-11-18 16:36:36">2024-11-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/" title="3-c和指针">3-c和指针</a><time datetime="2024-10-05T01:08:40.601Z" title="Created 2024-10-05 09:08:40">2024-10-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/26/6-%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%8A%80%E6%9C%AF%E4%B9%8BLinux%E5%BA%94%E7%94%A8%E5%B1%82%E5%BC%80%E5%8F%91/" title="6-尚硅谷嵌入式技术之Linux应用层开发">6-尚硅谷嵌入式技术之Linux应用层开发</a><time datetime="2024-09-26T01:48:58.379Z" title="Created 2024-09-26 09:48:58">2024-09-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/17/5-Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="5-Linux中常用指令">5-Linux中常用指令</a><time datetime="2024-09-17T09:12:01.534Z" title="Created 2024-09-17 17:12:01">2024-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By joy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>3-c和指针 | badboy</title><meta name="author" content="joy"><meta name="copyright" content="joy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="c和指针第一章 快速上手本书源程序 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3-c和指针">
+<meta property="og:url" content="http://example.com/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/index.html">
+<meta property="og:site_name" content="badboy">
+<meta property="og:description" content="c和指针第一章 快速上手本书源程序 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-10-05T01:08:40.601Z">
+<meta property="article:modified_time" content="2024-11-18T08:53:21.535Z">
+<meta property="article:author" content="joy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '3-c和指针',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-18 16:53:21'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="badboy"><span class="site-name">badboy</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">3-c和指针</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-05T01:08:40.601Z" title="Created 2024-10-05 09:08:40">2024-10-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-18T08:53:21.535Z" title="Updated 2024-11-18 16:53:21">2024-11-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="3-c和指针"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="c和指针"><a href="#c和指针" class="headerlink" title="c和指针"></a>c和指针</h1><h3 id="第一章-快速上手"><a href="#第一章-快速上手" class="headerlink" title="第一章 快速上手"></a>第一章 快速上手</h3><p><strong>本书源程序</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *这个程序从标准输入中读取输入行并在标准输出中打印这写输入行 </span></span><br><span class="line"><span class="comment"> * 每个输入行的后面一行是该行内容的一部分</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * 输入的第一行是一串列标号，串的最后以一个负数结尾</span></span><br><span class="line"><span class="comment"> * 这些列标号成对出现，说明需要打印的输入行的列的范围</span></span><br><span class="line"><span class="comment"> * 例如，0 3 10 12 -1 表示第0列到第3列，第10列到第12列的内容将被打印</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX_COLS 20                       <span class="comment">/* 所能处理的最大列号*/</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAX_INPUT 1000                    <span class="comment">/* 每个输入行的最大长度*/</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">read_column_numbers</span><span class="params">(<span class="type">int</span> columns[], <span class="type">int</span> max)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">rearrange</span><span class="params">(<span class="type">char</span> *output, <span class="type">char</span> <span class="type">const</span> *input, <span class="type">int</span> n_columns, <span class="type">int</span> <span class="type">const</span> columns[])</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="type">int</span> n_columns;            <span class="comment">/* 进行处理的列标号*/</span></span><br><span class="line">    <span class="type">int</span> columns[MAX_COLS];    <span class="comment">/* 需要处理的列数*/</span></span><br><span class="line">    <span class="type">char</span> input[MAX_INPUT];    <span class="comment">/* 容纳输入行的数组*/</span></span><br><span class="line">    <span class="type">char</span> output[MAX_INPUT];   <span class="comment">/* 容纳输出行的数组*/</span></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 读取该串列标号</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    n_columns = read_column_numbers(columns, MAX_COLS);</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *读取。处理和打印剩余的输入行</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">while</span>(gets(input) != <span class="literal">NULL</span>)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Oringinal input : %s\n&quot;</span>, input);</span><br><span class="line">        rearrange(output, input, n_columns, columns);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Rearrange line: %s\n&quot;</span>, output);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*读取列标号，如果超出范围则不予理会</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">read_column_numbers</span><span class="params">(<span class="type">int</span> colums[], <span class="type">int</span> max)</span>&#123;</span><br><span class="line">    <span class="type">int</span> num = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> ch;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *取得列标号，如果所读取的数小于0则停止</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">while</span>(num &lt; max &amp;&amp; <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;colums[num]) == <span class="number">1</span> &amp;&amp; colums[num] &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">        num += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *确定已经读取的标号为偶数个，因为他们是以对的形式出现的</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">if</span>(num % <span class="number">2</span> != <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">&quot;Last column number is not paired.&quot;</span>);</span><br><span class="line">        <span class="built_in">exit</span>(EXIT_FAILURE);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *丢弃该行中包含最后一个数字的那部分内容</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">while</span>((ch = getchar()) != EOF &amp;&amp; ch != <span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    <span class="keyword">return</span> num;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*处理输入行，将指定列的字符连接在一起，输出行以NUL结尾</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">rearrange</span><span class="params">(<span class="type">char</span> *output, <span class="type">char</span> <span class="type">const</span> *input, <span class="type">int</span> n_columns, <span class="type">int</span> <span class="type">const</span> colunmns[])</span>&#123;</span><br><span class="line">    <span class="type">int</span> col;                    <span class="comment">/* columns数组的下标*/</span></span><br><span class="line">    <span class="type">int</span> output_col;             <span class="comment">/* 输出列计数器*/</span></span><br><span class="line">    <span class="type">int</span> len;                    <span class="comment">/* 输入行的长度*/</span></span><br><span class="line"></span><br><span class="line">    len = <span class="built_in">strlen</span>(input);</span><br><span class="line">    output_col = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    * 处理每对列标号</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">for</span>(col = <span class="number">0</span>; col &lt; n_columns; col += <span class="number">2</span>)&#123;</span><br><span class="line">        <span class="type">int</span> nchars = colunmns[col + <span class="number">1</span>] - colunmns[col] + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * 如果输入行结束或输出行数组已满，就结束任务</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">if</span>(colunmns[col] &gt;= len || output_col == MAX_INPUT - <span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * 如果输出行数据空间不够，只复制可以容纳的数据</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">if</span>(output_col + nchars &gt; MAX_INPUT - <span class="number">1</span>)&#123;</span><br><span class="line">            nchars = MAX_INPUT - output_col <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * 复制相关的数据</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="built_in">strncpy</span>(output + output_col, input + colunmns[col], nchars);</span><br><span class="line">        output_col += nchars;</span><br><span class="line">    &#125;</span><br><span class="line">    output[output_col] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>问题</strong></p>
+<p>1.c是一张自由形式的语言，也就是说并没有规则规定它的外观究竟应该怎样。但本章的例子程序遵循了一定的空白使用规则。你对此有何想法？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我：什么是空白使用规则？</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.把声明(如函数原型的声明)放在头文件中，并在需要时用#include指令把它们包含于源文件中，这种做法有什么好处？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="第二章-基本概念"><a href="#第二章-基本概念" class="headerlink" title="第二章 基本概念"></a>第二章 基本概念</h3><p><strong>问题</strong></p>
+<p>1.在c语言中，注释不允许嵌套。在下面的代码段中，用注释来“注释掉”一段语句会导致什么结果？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span></span><br><span class="line"><span class="title function_">squares</span><span class="params">(<span class="type">int</span> limit)</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">/* Comment out this entire function</span></span><br><span class="line"><span class="comment">		int		i;		/* loop counter */</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		** Print table of squares</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line">		<span class="keyword">for</span>( i = <span class="number">0</span>; i &lt; limit; i += <span class="number">1</span> )</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;%d %d0&quot;</span>, i, i * i);</span><br><span class="line">End of commented-out code */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：会报错，最后一个*/没有与之匹配的<span class="comment">/*。没有起到注释的效果</span></span><br></pre></td></tr></table></figure>
+
+<p>2.把一个大型程序放入一个单一的源文件中有什么优点？有什么缺点？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：优点，应该是所有程序都在同一个文件中，不用担心重复定义问题。缺点是文件太长，不方便维护管理。</span><br></pre></td></tr></table></figure>
+
+<p>3.你需要中printf函数打印处下面这段文本（包括两边的双引号）。你应该使用什么样的字符串常量参数？</p>
+<p>​		“Blunder??!??”</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我：这道题涉及到《三字母词》以及转义字符。我的答案如下</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Blunder\?\?!\?\?\n&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>4.\40的值是多少？\100、\x40、\x100、\0123、\x0123的值又分别是多少？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">我：\<span class="number">40</span>表示八进制数，<span class="number">4</span> * <span class="number">8</span> = <span class="number">32</span></span><br><span class="line">   \<span class="number">100</span>表示八进制数，<span class="number">1</span> * <span class="number">64</span> = <span class="number">64</span></span><br><span class="line">   \x40表示十六进制数，<span class="number">4</span> * <span class="number">16</span> = <span class="number">64</span></span><br><span class="line">   \x100表示十六进制数，<span class="number">1</span> * <span class="number">256</span> = <span class="number">256</span></span><br><span class="line">   \<span class="number">0123</span>表示八进制数，<span class="number">1</span> * <span class="number">64</span> + <span class="number">2</span> * <span class="number">8</span> + <span class="number">3</span> * <span class="number">1</span> =  <span class="number">83</span></span><br><span class="line">   \x0123表示十六进制数，<span class="number">1</span> * <span class="number">256</span> + <span class="number">2</span> * <span class="number">16</span> + <span class="number">3</span> * <span class="number">1</span> = <span class="number">291</span></span><br></pre></td></tr></table></figure>
+
+<p>5.下面这条语句的结果是什么？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>  x<span class="comment">/*blah blah*/</span>y;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：定义一个变量xy</span><br></pre></td></tr></table></figure>
+
+<p>6.下面的这条语句的结果是什么(如果有的话)？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> Case, If, While, Stop, stop;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：由于我在写题目的时候发现这些变量没有高亮，说明不是关键字，故可以这样定义。要注意的是变量名不能用关键字来定义。</span><br></pre></td></tr></table></figure>
+
+<p>7.是非题：因为C（除了预处理指令之外）是一种自由形式的语言，唯一规定程序应如何编写的规则就是语法规则，所以程序实际看上去的样子无关紧要。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：一个合格的程序员应该要规范代码风格。这样无论是自己还是别人来看自己的代码时，更容易看懂，更容易去维护。规范的代码至少看着舒服一些。行内不是有一句话嘛，因为写烂代码而被同事打死。</span><br></pre></td></tr></table></figure>
+
+<p>8.下面程序中的循环是否正确？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span></span><br><span class="line"><span class="title function_">main</span><span class="params">(<span class="type">void</span>）</span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params"><span class="type">int</span>           x,y;</span></span><br><span class="line"><span class="params">    </span></span><br><span class="line"><span class="params">x = <span class="number">0</span>;</span></span><br><span class="line"><span class="params"><span class="keyword">while</span>( x &lt; <span class="number">10</span> )</span></span><br><span class="line"><span class="params">		y = x * x;</span></span><br><span class="line"><span class="params">		<span class="built_in">printf</span>(<span class="string">&quot;%d\t%d\n&quot;</span>,x,y );</span></span><br><span class="line"><span class="params">		× += <span class="number">1</span>;</span></span><br><span class="line"><span class="params">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：为什么没有返回值，这一点我就觉得这个函数没写对。这里的循环是否正确，指的是是否能正确执行，还是是否是按照逻辑执行。我就按是否能正确执行处理，这里能正确执行，不会陷入死循环，当x为<span class="number">10</span>时，退出循环。</span><br></pre></td></tr></table></figure>
+
+<p>这个程序的循环是否正确？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span></span><br><span class="line"><span class="title function_">main</span><span class="params">(<span class="type">void</span>）</span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params">        <span class="type">int</span>           x,y;</span></span><br><span class="line"><span class="params">        x = <span class="number">0</span>;</span></span><br><span class="line"><span class="params">        <span class="keyword">while</span>( x &lt; <span class="number">10</span> )</span></span><br><span class="line"><span class="params">                y = x * x;</span></span><br><span class="line"><span class="params">                <span class="built_in">printf</span>(<span class="string">&quot;%d\t%d\n&quot;</span>,x,y );</span></span><br><span class="line"><span class="params">                × += <span class="number">1</span>;</span></span><br><span class="line"><span class="params">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>哪个程序更易于检查正确性？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：这两个程序有什么区别吗，同上。很明显是第二个程序更容易检查正确性，因为第二个程序看起来更规范一些。</span><br></pre></td></tr></table></figure>
+
+<p>10.接上提，如果你想使程序链接到parse函数库，你应该对命令作何修改？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：parse函数库是干什么的，为什么要链接到该函数库。</span><br></pre></td></tr></table></figure>
+
+<p>11.假定你有一个c程序，它由几个单独的文件组成，而这几个文件又分别包含了其他文件，如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center">文件</th>
+<th align="center">包含文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">main.c</td>
+<td align="center">stdio.h, table.h</td>
+</tr>
+<tr>
+<td align="center">list.c</td>
+<td align="center">list.h</td>
+</tr>
+<tr>
+<td align="center">symbol.c</td>
+<td align="center">symbol.h</td>
+</tr>
+<tr>
+<td align="center">table.c</td>
+<td align="center">table.h</td>
+</tr>
+<tr>
+<td align="center">table.h</td>
+<td align="center">symbol.h, list.h</td>
+</tr>
+</tbody></table>
+<p>如果你对list.c作了修改，你应该用什么命令进行重新编译？如果是list.h或者table.h作了修改，又分别应该使用什么命令？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">我：linux中，我是这样做的</span><br><span class="line">    gcc -o <span class="built_in">list</span> <span class="built_in">list</span>.c</span><br><span class="line">    gcc -o <span class="built_in">list</span> <span class="built_in">list</span>.c</span><br><span class="line">    gcc -o table table.c</span><br></pre></td></tr></table></figure>
+
+<h3 id="第三章-数据"><a href="#第三章-数据" class="headerlink" title="第三章 数据"></a>第三章 数据</h3><p><strong>问题</strong></p>
+<p>1.在你的机器上，字符的范围有多大？有哪些不同的整数类型？它们的范围又是如何？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">我：</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;signed char min =%d\n&quot;</span>,-(<span class="type">char</span>)((<span class="type">unsigned</span> <span class="type">char</span>)~<span class="number">0</span>&gt;&gt;<span class="number">1</span>));</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;signed char max =%d\n&quot;</span>, (<span class="type">char</span>)((<span class="type">unsigned</span> <span class="type">char</span>)~<span class="number">0</span>&gt;&gt;<span class="number">1</span>)); </span><br><span class="line">没明白是什么意思，结果是<span class="number">-127</span>～<span class="number">127</span>。</span><br><span class="line">有[<span class="type">short</span>] [<span class="type">int</span>] [<span class="type">long</span>] [<span class="type">unsigned</span> <span class="type">short</span>] [<span class="type">unsigned</span> <span class="type">int</span>] [<span class="type">unsigned</span> <span class="type">long</span>]六种整数类型</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">short</td>
+<td align="center">-32767到32767</td>
+</tr>
+<tr>
+<td align="center">unsigned short</td>
+<td align="center">0到65535</td>
+</tr>
+<tr>
+<td align="center">int</td>
+<td align="center">-32767到32767</td>
+</tr>
+<tr>
+<td align="center">unsigned int</td>
+<td align="center">0到65535</td>
+</tr>
+<tr>
+<td align="center">long</td>
+<td align="center">-2147483647到2147483647</td>
+</tr>
+<tr>
+<td align="center">unsigned long</td>
+<td align="center">0到4294967295</td>
+</tr>
+</tbody></table>
+<p>2.在你的机器上，各种不同的类型的浮点数的范围是怎样的？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：略</span><br></pre></td></tr></table></figure>
+
+<p><strong>3</strong>.假定你正编写一个程序，它必须运行于两台机器之上。这两台机器的缺省整型长度并不相同，一个是16位，另一个是32位。而这两台机器的长整型长度分别是32位和64位。程序所使用的有些变量的值并不太大，足以保存于任何一台机器的缺省整型变量中，但有些变量的值却较大，必须是32位的整型变量才能容纳它。一种可行的解决方案是用长整型表示所有的值，但在16位机器上，对于那些用16位足以容纳的值而言，时间和空间的浪费不可小视。在32位机器上，也存在时间和空间的浪费问题。<br>如果想让这些变量在任何一台机器上的长度都合适的话，你该如何声明它们呢？正确的方法是不应该在任何一台机器中编译程序前对程序进行修改。提示：试试包含一个头文件，里面包含每台机器特定的声明。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">我：</span><br><span class="line">在<span class="number">32</span>位机器上</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">signed</span> <span class="type">char</span>-----------int8</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">short</span> <span class="type">int</span>----------------int16</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>-----------------------int32</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>-----------------------defint8</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>-----------------------defint16</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>-----------------------defint32</span><br><span class="line"></span><br><span class="line">在<span class="number">16</span>位机器上</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">signed</span> <span class="type">char</span>-----------int8</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>------------------------int16</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">int</span>------------------int32</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>------------------------defint8</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span>------------------------defint16</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">int</span>-----------------defint32</span><br></pre></td></tr></table></figure>
+
+<p>7.下列代码段会打印出什么东西？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Liquid</span> &#123;</span>OUNCE = <span class="number">1</span>, CPU = <span class="number">8</span>, PINT = <span class="number">16</span>,</span><br><span class="line">            QUART = <span class="number">32</span>, GALLON = <span class="number">128</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Liquid</span> <span class="title">jar</span>;</span></span><br><span class="line">jar = QUART;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, jar);</span><br><span class="line">jar = jar + PINT;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, jar);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：会报错，因为我试过，把%s修改为%d，结果为<span class="number">32</span> <span class="number">48</span></span><br></pre></td></tr></table></figure>
+
+<p>10.一个无符号变量可不可以比相同长度的有符号变量容纳更大的值？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我：可以，相同长度下，无符号变量的最大值和最小值，都要大于有符号变量的最大值和最小值。</span><br><span class="line">    </span><br><span class="line">    这题答案是否</span><br></pre></td></tr></table></figure>
+
+<p>11.假如int和float类型都是32位长，你觉得哪种类型所能容纳的值精度更大一些？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我：答案：<span class="type">float</span>的范围比<span class="type">int</span>大，但如果它的位数不比<span class="type">int</span>更多，它并不能比<span class="type">int</span>表示更多不同的值。前一个问题的答案已经提示了它们应该能够表示的不同值得数量是相同得，但在绝大多数浮点系统中，这个答案是错误的。零通常有许多表示形式，而且通过使用不规范的小数形式，其他值也具有多种不同的表示形式。因此，<span class="type">float</span>能够表示的不同值的数量比<span class="type">int</span>少。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="第四章-语句"><a href="#第四章-语句" class="headerlink" title="第四章 语句"></a>第四章 语句</h3><h3 id="第五章-操作符和表达式"><a href="#第五章-操作符和表达式" class="headerlink" title="第五章 操作符和表达式"></a>第五章 操作符和表达式</h3><h3 id="第六章-指针"><a href="#第六章-指针" class="headerlink" title="第六章 指针"></a>第六章 指针</h3><h3 id="第七章-函数"><a href="#第七章-函数" class="headerlink" title="第七章 函数"></a>第七章 函数</h3><h3 id="第八章数组"><a href="#第八章数组" class="headerlink" title="第八章数组"></a>第八章数组</h3><h3 id="第九章-字符串、字符和字节"><a href="#第九章-字符串、字符和字节" class="headerlink" title="第九章 字符串、字符和字节"></a>第九章 字符串、字符和字节</h3><h3 id="第十章-结构和联合"><a href="#第十章-结构和联合" class="headerlink" title="第十章 结构和联合"></a>第十章 结构和联合</h3><h3 id="第十一章-动态内存分配"><a href="#第十一章-动态内存分配" class="headerlink" title="第十一章 动态内存分配"></a>第十一章 动态内存分配</h3><h3 id="第十二章-使用结构和指针"><a href="#第十二章-使用结构和指针" class="headerlink" title="第十二章 使用结构和指针"></a>第十二章 使用结构和指针</h3><h3 id="第十三章-高级指针话题"><a href="#第十三章-高级指针话题" class="headerlink" title="第十三章 高级指针话题"></a>第十三章 高级指针话题</h3><h3 id="第十四章-预处理"><a href="#第十四章-预处理" class="headerlink" title="第十四章 预处理"></a>第十四章 预处理</h3><h3 id="第十五章-输入-输出函数"><a href="#第十五章-输入-输出函数" class="headerlink" title="第十五章 输入&#x2F;输出函数"></a>第十五章 输入&#x2F;输出函数</h3><h3 id="第十六章-标准函数库"><a href="#第十六章-标准函数库" class="headerlink" title="第十六章 标准函数库"></a>第十六章 标准函数库</h3><h3 id="第十七章-金典抽象数据类型"><a href="#第十七章-金典抽象数据类型" class="headerlink" title="第十七章 金典抽象数据类型"></a>第十七章 金典抽象数据类型</h3><h3 id="第十八章-运行时环境"><a href="#第十八章-运行时环境" class="headerlink" title="第十八章 运行时环境"></a>第十八章 运行时环境</h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">joy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/">http://example.com/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/11/18/2-Altium%20Designer24/" title="2-Altium Designer24"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">2-Altium Designer24</div></div></a></div><div class="next-post pull-right"><a href="/2024/09/26/6-%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%8A%80%E6%9C%AF%E4%B9%8BLinux%E5%BA%94%E7%94%A8%E5%B1%82%E5%BC%80%E5%8F%91/" title="6-尚硅谷嵌入式技术之Linux应用层开发"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">6-尚硅谷嵌入式技术之Linux应用层开发</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">joy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#c%E5%92%8C%E6%8C%87%E9%92%88"><span class="toc-number">1.</span> <span class="toc-text">c和指针</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">1.0.1.</span> <span class="toc-text">第一章 快速上手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.0.2.</span> <span class="toc-text">第二章 基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%95%B0%E6%8D%AE"><span class="toc-number">1.0.3.</span> <span class="toc-text">第三章 数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.0.4.</span> <span class="toc-text">第四章 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.0.5.</span> <span class="toc-text">第五章 操作符和表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%8C%87%E9%92%88"><span class="toc-number">1.0.6.</span> <span class="toc-text">第六章 指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%87%BD%E6%95%B0"><span class="toc-number">1.0.7.</span> <span class="toc-text">第七章 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0%E6%95%B0%E7%BB%84"><span class="toc-number">1.0.8.</span> <span class="toc-text">第八章数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%AD%97%E7%AC%A6%E5%92%8C%E5%AD%97%E8%8A%82"><span class="toc-number">1.0.9.</span> <span class="toc-text">第九章 字符串、字符和字节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E7%BB%93%E6%9E%84%E5%92%8C%E8%81%94%E5%90%88"><span class="toc-number">1.0.10.</span> <span class="toc-text">第十章 结构和联合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"><span class="toc-number">1.0.11.</span> <span class="toc-text">第十一章 动态内存分配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0-%E4%BD%BF%E7%94%A8%E7%BB%93%E6%9E%84%E5%92%8C%E6%8C%87%E9%92%88"><span class="toc-number">1.0.12.</span> <span class="toc-text">第十二章 使用结构和指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0-%E9%AB%98%E7%BA%A7%E6%8C%87%E9%92%88%E8%AF%9D%E9%A2%98"><span class="toc-number">1.0.13.</span> <span class="toc-text">第十三章 高级指针话题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0-%E9%A2%84%E5%A4%84%E7%90%86"><span class="toc-number">1.0.14.</span> <span class="toc-text">第十四章 预处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0-%E8%BE%93%E5%85%A5-%E8%BE%93%E5%87%BA%E5%87%BD%E6%95%B0"><span class="toc-number">1.0.15.</span> <span class="toc-text">第十五章 输入&#x2F;输出函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AD%E7%AB%A0-%E6%A0%87%E5%87%86%E5%87%BD%E6%95%B0%E5%BA%93"><span class="toc-number">1.0.16.</span> <span class="toc-text">第十六章 标准函数库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%83%E7%AB%A0-%E9%87%91%E5%85%B8%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.0.17.</span> <span class="toc-text">第十七章 金典抽象数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E8%BF%90%E8%A1%8C%E6%97%B6%E7%8E%AF%E5%A2%83"><span class="toc-number">1.0.18.</span> <span class="toc-text">第十八章 运行时环境</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/18/4-ubuntu%2018.04%E5%BF%AB%E9%80%9F%E9%87%8D%E5%BC%80/" title="4-Ubuntu 18.04快速重开">4-Ubuntu 18.04快速重开</a><time datetime="2024-11-18T08:42:20.323Z" title="Created 2024-11-18 16:42:20">2024-11-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/18/2-Altium%20Designer24/" title="2-Altium Designer24">2-Altium Designer24</a><time datetime="2024-11-18T08:36:36.333Z" title="Created 2024-11-18 16:36:36">2024-11-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/05/3-c%E5%92%8C%E6%8C%87%E9%92%88/" title="3-c和指针">3-c和指针</a><time datetime="2024-10-05T01:08:40.601Z" title="Created 2024-10-05 09:08:40">2024-10-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/26/6-%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%8A%80%E6%9C%AF%E4%B9%8BLinux%E5%BA%94%E7%94%A8%E5%B1%82%E5%BC%80%E5%8F%91/" title="6-尚硅谷嵌入式技术之Linux应用层开发">6-尚硅谷嵌入式技术之Linux应用层开发</a><time datetime="2024-09-26T01:48:58.379Z" title="Created 2024-09-26 09:48:58">2024-09-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/17/5-Linux%E4%B8%AD%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="5-Linux中常用指令">5-Linux中常用指令</a><time datetime="2024-09-17T09:12:01.534Z" title="Created 2024-09-17 17:12:01">2024-09-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By joy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
